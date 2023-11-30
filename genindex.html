@@ -1,0 +1,1585 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xml:lang="" lang="" version="-//W3C//DTD XHTML 1.1//EN" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  
+  <title>Index &mdash; Schema Automator  documentation</title>
+  
+
+  
+
+  
+
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'/>
+    <link rel="stylesheet" href="_static/css/pdj.css" type="text/css" />
+
+  
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  
+    <link rel="stylesheet" href="_static/css/pdj.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="#"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="Schema Automator  documentation" href="index.html"/>
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="cache-control" content="public" />
+    <meta name="robots" content="follow, all" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Add jQuery library -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+  </head>
+
+  <body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="index.html" class="fa fa-home"> Schema Automator </a>
+        <div role="search">
+	  <form id ="rtd-search-form" class="wy-form"
+		action="search.html" method="get">
+	    <input type="text" name="q" placeholder="Search docs" />
+	    <input type="hidden" name="check_keywords" value="yes" />
+	    <input type="hidden" name="area" value="default" />
+	  </form>
+	</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	
+          
+          
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="index.html">LinkML Schema Automator</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="install.html">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cli.html">Command Line</a></li>
+<li class="toctree-l2"><a class="reference internal" href="packages/index.html">Packages</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#indices-and-tables">Indices and tables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="introduction.html#generalization-from-instance-data">Generalization from Instance Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="introduction.html#importing-from-alternative-modeling-frameworks">Importing from alternative modeling frameworks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="introduction.html#annotating-schemas">Annotating schemas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="introduction.html#general-utilities">General Utilities</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="install.html">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="install.html#direct-installation">Direct Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="install.html#running-via-docker">Running via Docker</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="cli.html">Command Line</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="cli.html#preamble">Preamble</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cli.html#main-commands">Main commands</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="packages/index.html">Packages</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="packages/importers.html">Importers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="packages/generalizers.html">Generalizers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="packages/annotators.html">Annotators</a></li>
+</ul>
+</li>
+</ul>
+
+          
+        
+
+      </div>
+      &nbsp;
+    </nav>
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      <nav class="wy-nav-top" id="barra-mobile" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="#">Porão do Juca</a>
+      </nav>
+
+      <div class="wy-nav-content">
+	<div class="fundo-claro">
+	</div>
+	<div class="fundo-escuro">
+	</div>
+
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+	    
+	    <!-- <ul class="wy-breadcrumbs"> -->
+	    <!--   <li><a href="#">Docs</a> &raquo;</li> -->
+
+	    <!--   <li>Features</li> -->
+	    <!--   <li class="wy-breadcrumbs-aside"> -->
+
+	    <!-- 	<a href="_sources/index.txt" rel="nofollow"> View page source</a> -->
+
+	    <!--   </li> -->
+	    <!-- </ul> -->
+	    <!-- <hr/> -->
+	  </div>
+
+          <div role="main" class="">
+
+	    <div id="content" class="hfeed entry-container hentry">
+
+<h1 id="index">Index</h1>
+
+<div class="genindex-jumpbox">
+ <a href="#Symbols"><strong>Symbols</strong></a>
+ | <a href="#A"><strong>A</strong></a>
+ | <a href="#C"><strong>C</strong></a>
+ | <a href="#D"><strong>D</strong></a>
+ | <a href="#E"><strong>E</strong></a>
+ | <a href="#F"><strong>F</strong></a>
+ | <a href="#I"><strong>I</strong></a>
+ | <a href="#J"><strong>J</strong></a>
+ | <a href="#M"><strong>M</strong></a>
+ | <a href="#O"><strong>O</strong></a>
+ | <a href="#R"><strong>R</strong></a>
+ | <a href="#S"><strong>S</strong></a>
+ | <a href="#T"><strong>T</strong></a>
+ | <a href="#U"><strong>U</strong></a>
+ 
+</div>
+<h2 id="Symbols">Symbols</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li>
+    --annotate
+
+      <ul>
+        <li><a href="cli.html#cmdoption-schemauto-enrich-schema-annotate">schemauto-enrich-schema command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --annotator
+
+      <ul>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-tsv-A">schemauto-generalize-tsv command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --class-name
+
+      <ul>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-htmltable-c">schemauto-generalize-htmltable command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-tsv-c">schemauto-generalize-tsv command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-htmltable-c">schemauto-import-htmltable command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --column-separator
+
+      <ul>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-htmltable-s">schemauto-generalize-htmltable command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-tsv-s">schemauto-generalize-tsv command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-tsvs-s">schemauto-generalize-tsvs command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --columns
+
+      <ul>
+        <li><a href="cli.html#cmdoption-schemauto-import-htmltable-columns">schemauto-import-htmltable command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --container-class-name
+
+      <ul>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-json-container-class-name">schemauto-generalize-json command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-toml-container-class-name">schemauto-generalize-toml command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --curie-only
+
+      <ul>
+        <li><a href="cli.html#cmdoption-schemauto-annotate-schema-curie-only">schemauto-annotate-schema command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --data-dictionary-row-count
+
+      <ul>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-tsv-data-dictionary-row-count">schemauto-generalize-tsv command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --data-output
+
+      <ul>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-htmltable-data-output">schemauto-generalize-htmltable command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-htmltable-data-output">schemauto-import-htmltable command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --depluralize
+
+      <ul>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-json-depluralize">schemauto-generalize-json command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --dir
+
+      <ul>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-rdf-d">schemauto-generalize-rdf command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --downcase-header
+
+      <ul>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-htmltable-downcase-header">schemauto-generalize-htmltable command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-tsv-downcase-header">schemauto-generalize-tsv command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-tsvs-downcase-header">schemauto-generalize-tsvs command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --element-type
+
+      <ul>
+        <li><a href="cli.html#cmdoption-schemauto-import-htmltable-element-type">schemauto-import-htmltable command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --enum-columns
+
+      <ul>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-htmltable-E">schemauto-generalize-htmltable command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-json-E">schemauto-generalize-json command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-toml-E">schemauto-generalize-toml command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-tsv-E">schemauto-generalize-tsv command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-tsvs-E">schemauto-generalize-tsvs command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --enum-mask-columns
+
+      <ul>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-json-enum-mask-columns">schemauto-generalize-json command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-toml-enum-mask-columns">schemauto-generalize-toml command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --enum-threshold
+
+      <ul>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-htmltable-enum-threshold">schemauto-generalize-htmltable command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-json-enum-threshold">schemauto-generalize-json command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-toml-enum-threshold">schemauto-generalize-toml command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-tsv-enum-threshold">schemauto-generalize-tsv command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-tsvs-enum-threshold">schemauto-generalize-tsvs command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --format
+
+      <ul>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-json-f">schemauto-generalize-json command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-json-schema-f">schemauto-import-json-schema command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --identifier
+
+      <ul>
+        <li><a href="cli.html#cmdoption-schemauto-import-owl-I">schemauto-import-owl command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-rdfs-0">schemauto-import-rdfs command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --import-project
+
+      <ul>
+        <li><a href="cli.html#cmdoption-schemauto-import-json-schema-import-project">schemauto-import-json-schema command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --inlined-map
+
+      <ul>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-json-inlined-map">schemauto-generalize-json command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --input
+
+      <ul>
+        <li><a href="cli.html#cmdoption-schemauto-annotate-schema-i">schemauto-annotate-schema command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-enrich-schema-i">schemauto-enrich-schema command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --input-type
+
+      <ul>
+        <li><a href="cli.html#cmdoption-schemauto-import-rdfs-I">schemauto-import-rdfs command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --max-enum-size
+
+      <ul>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-htmltable-max-enum-size">schemauto-generalize-htmltable command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-json-max-enum-size">schemauto-generalize-json command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-toml-max-enum-size">schemauto-generalize-toml command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-tsv-max-enum-size">schemauto-generalize-tsv command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-tsvs-max-enum-size">schemauto-generalize-tsvs command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --metamodel-mappings
+
+      <ul>
+        <li><a href="cli.html#cmdoption-schemauto-import-rdfs-metamodel-mappings">schemauto-import-rdfs command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --model-uri
+
+      <ul>
+        <li><a href="cli.html#cmdoption-schemauto-import-owl-model-uri">schemauto-import-owl command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-rdfs-model-uri">schemauto-import-rdfs command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --no-annotate
+
+      <ul>
+        <li><a href="cli.html#cmdoption-schemauto-enrich-schema-annotate">schemauto-enrich-schema command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --no-curie-only
+
+      <ul>
+        <li><a href="cli.html#cmdoption-schemauto-annotate-schema-curie-only">schemauto-annotate-schema command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --no-depluralized
+
+      <ul>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-json-depluralize">schemauto-generalize-json command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --no-downcase-header
+
+      <ul>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-htmltable-downcase-header">schemauto-generalize-htmltable command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-tsv-downcase-header">schemauto-generalize-tsv command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-tsvs-downcase-header">schemauto-generalize-tsvs command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --no-import-project
+
+      <ul>
+        <li><a href="cli.html#cmdoption-schemauto-import-json-schema-import-project">schemauto-import-json-schema command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --no-omit-null
+
+      <ul>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-json-omit-null">schemauto-generalize-json command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-toml-omit-null">schemauto-generalize-toml command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --no-pandera
+
+      <ul>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-htmltable-pandera">schemauto-generalize-htmltable command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-tsv-pandera">schemauto-generalize-tsv command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --no-range-as-enums
+
+      <ul>
+        <li><a href="cli.html#cmdoption-schemauto-import-dosdps-range-as-enums">schemauto-import-dosdps command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --no-robot
+
+      <ul>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-tsv-robot">schemauto-generalize-tsv command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-tsvs-robot">schemauto-generalize-tsvs command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --no-snakecase-header
+
+      <ul>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-htmltable-snakecase-header">schemauto-generalize-htmltable command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-tsv-snakecase-header">schemauto-generalize-tsv command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-tsvs-snakecase-header">schemauto-generalize-tsvs command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --no-use-attributes
+
+      <ul>
+        <li><a href="cli.html#cmdoption-schemauto-import-json-schema-use-attributes">schemauto-import-json-schema command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --omit-null
+
+      <ul>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-json-omit-null">schemauto-generalize-json command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-toml-omit-null">schemauto-generalize-toml command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --output
+
+      <ul>
+        <li><a href="cli.html#cmdoption-schemauto-annotate-schema-o">schemauto-annotate-schema command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-annotate-using-jsonld-o">schemauto-annotate-using-jsonld command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-enrich-schema-o">schemauto-enrich-schema command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-htmltable-o">schemauto-generalize-htmltable command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-json-o">schemauto-generalize-json command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-rdf-o">schemauto-generalize-rdf command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-toml-o">schemauto-generalize-toml command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-tsv-o">schemauto-generalize-tsv command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-tsvs-o">schemauto-generalize-tsvs command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-dosdps-o">schemauto-import-dosdps command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-frictionless-o">schemauto-import-frictionless command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-htmltable-o">schemauto-import-htmltable command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-json-schema-o">schemauto-import-json-schema command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-owl-0">schemauto-import-owl command line option</a>, <a href="cli.html#cmdoption-schemauto-import-owl-o">[1]</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-rdfs-1">schemauto-import-rdfs command line option</a>, <a href="cli.html#cmdoption-schemauto-import-rdfs-o">[1]</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-sql-o">schemauto-import-sql command line option</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li>
+    --pandera
+
+      <ul>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-htmltable-pandera">schemauto-generalize-htmltable command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-tsv-pandera">schemauto-generalize-tsv command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --parent
+
+      <ul>
+        <li><a href="cli.html#cmdoption-schemauto-import-htmltable-parent">schemauto-import-htmltable command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --quiet
+
+      <ul>
+        <li><a href="cli.html#cmdoption-schemauto-q">schemauto command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --range-as-enums
+
+      <ul>
+        <li><a href="cli.html#cmdoption-schemauto-import-dosdps-range-as-enums">schemauto-import-dosdps command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --robot
+
+      <ul>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-tsv-robot">schemauto-generalize-tsv command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-tsvs-robot">schemauto-generalize-tsvs command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --schema-id
+
+      <ul>
+        <li><a href="cli.html#cmdoption-schemauto-import-frictionless-schema-id">schemauto-import-frictionless command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --schema-name
+
+      <ul>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-htmltable-n">schemauto-generalize-htmltable command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-json-n">schemauto-generalize-json command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-toml-n">schemauto-generalize-toml command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-tsv-n">schemauto-generalize-tsv command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-tsvs-n">schemauto-generalize-tsvs command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-dosdps-n">schemauto-import-dosdps command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-frictionless-n">schemauto-import-frictionless command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-htmltable-n">schemauto-import-htmltable command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-json-schema-n">schemauto-import-json-schema command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-owl-n">schemauto-import-owl command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-rdfs-n">schemauto-import-rdfs command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-sql-n">schemauto-import-sql command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --snakecase-header
+
+      <ul>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-htmltable-snakecase-header">schemauto-generalize-htmltable command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-tsv-snakecase-header">schemauto-generalize-tsv command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-tsvs-snakecase-header">schemauto-generalize-tsvs command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --table-number
+
+      <ul>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-htmltable-table-number">schemauto-generalize-htmltable command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-htmltable-table-number">schemauto-import-htmltable command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --use-attributes
+
+      <ul>
+        <li><a href="cli.html#cmdoption-schemauto-import-json-schema-use-attributes">schemauto-import-json-schema command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --verbose
+
+      <ul>
+        <li><a href="cli.html#cmdoption-schemauto-v">schemauto command line option</a>
+</li>
+      </ul></li>
+      <li>
+    -A
+
+      <ul>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-tsv-A">schemauto-generalize-tsv command line option</a>
+</li>
+      </ul></li>
+      <li>
+    -c
+
+      <ul>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-htmltable-c">schemauto-generalize-htmltable command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-tsv-c">schemauto-generalize-tsv command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-htmltable-c">schemauto-import-htmltable command line option</a>
+</li>
+      </ul></li>
+      <li>
+    -d
+
+      <ul>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-rdf-d">schemauto-generalize-rdf command line option</a>
+</li>
+      </ul></li>
+      <li>
+    -E
+
+      <ul>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-htmltable-E">schemauto-generalize-htmltable command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-json-E">schemauto-generalize-json command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-toml-E">schemauto-generalize-toml command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-tsv-E">schemauto-generalize-tsv command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-tsvs-E">schemauto-generalize-tsvs command line option</a>
+</li>
+      </ul></li>
+      <li>
+    -f
+
+      <ul>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-json-f">schemauto-generalize-json command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-json-schema-f">schemauto-import-json-schema command line option</a>
+</li>
+      </ul></li>
+      <li>
+    -I
+
+      <ul>
+        <li><a href="cli.html#cmdoption-schemauto-import-owl-I">schemauto-import-owl command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-rdfs-0">schemauto-import-rdfs command line option</a>, <a href="cli.html#cmdoption-schemauto-import-rdfs-I">[1]</a>
+</li>
+      </ul></li>
+      <li>
+    -i
+
+      <ul>
+        <li><a href="cli.html#cmdoption-schemauto-annotate-schema-i">schemauto-annotate-schema command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-enrich-schema-i">schemauto-enrich-schema command line option</a>
+</li>
+      </ul></li>
+      <li>
+    -n
+
+      <ul>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-htmltable-n">schemauto-generalize-htmltable command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-json-n">schemauto-generalize-json command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-toml-n">schemauto-generalize-toml command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-tsv-n">schemauto-generalize-tsv command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-tsvs-n">schemauto-generalize-tsvs command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-dosdps-n">schemauto-import-dosdps command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-frictionless-n">schemauto-import-frictionless command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-htmltable-n">schemauto-import-htmltable command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-json-schema-n">schemauto-import-json-schema command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-owl-n">schemauto-import-owl command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-rdfs-n">schemauto-import-rdfs command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-sql-n">schemauto-import-sql command line option</a>
+</li>
+      </ul></li>
+      <li>
+    -o
+
+      <ul>
+        <li><a href="cli.html#cmdoption-schemauto-annotate-schema-o">schemauto-annotate-schema command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-annotate-using-jsonld-o">schemauto-annotate-using-jsonld command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-enrich-schema-o">schemauto-enrich-schema command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-htmltable-o">schemauto-generalize-htmltable command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-json-o">schemauto-generalize-json command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-rdf-o">schemauto-generalize-rdf command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-toml-o">schemauto-generalize-toml command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-tsv-o">schemauto-generalize-tsv command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-tsvs-o">schemauto-generalize-tsvs command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-dosdps-o">schemauto-import-dosdps command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-frictionless-o">schemauto-import-frictionless command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-htmltable-o">schemauto-import-htmltable command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-json-schema-o">schemauto-import-json-schema command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-owl-0">schemauto-import-owl command line option</a>, <a href="cli.html#cmdoption-schemauto-import-owl-o">[1]</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-rdfs-1">schemauto-import-rdfs command line option</a>, <a href="cli.html#cmdoption-schemauto-import-rdfs-o">[1]</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-sql-o">schemauto-import-sql command line option</a>
+</li>
+      </ul></li>
+      <li>
+    -q
+
+      <ul>
+        <li><a href="cli.html#cmdoption-schemauto-q">schemauto command line option</a>
+</li>
+      </ul></li>
+      <li>
+    -s
+
+      <ul>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-htmltable-s">schemauto-generalize-htmltable command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-tsv-s">schemauto-generalize-tsv command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-tsvs-s">schemauto-generalize-tsvs command line option</a>
+</li>
+      </ul></li>
+      <li>
+    -v
+
+      <ul>
+        <li><a href="cli.html#cmdoption-schemauto-v">schemauto command line option</a>
+</li>
+      </ul></li>
+  </ul></td>
+</tr></table>
+
+<h2 id="A">A</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="packages/annotators.html#schema_automator.annotators.JsonLdAnnotator.annotate">annotate() (schema_automator.annotators.JsonLdAnnotator method)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="packages/annotators.html#schema_automator.annotators.SchemaAnnotator.annotate_element">annotate_element() (schema_automator.annotators.SchemaAnnotator method)</a>
+</li>
+      <li><a href="packages/annotators.html#schema_automator.annotators.SchemaAnnotator.annotate_schema">annotate_schema() (schema_automator.annotators.SchemaAnnotator method)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="C">C</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="packages/generalizers.html#schema_automator.generalizers.CsvDataGeneralizer.column_separator">column_separator (schema_automator.generalizers.CsvDataGeneralizer attribute)</a>
+</li>
+      <li><a href="packages/generalizers.html#schema_automator.generalizers.CsvDataGeneralizer.convert">convert() (schema_automator.generalizers.CsvDataGeneralizer method)</a>
+
+      <ul>
+        <li><a href="packages/generalizers.html#schema_automator.generalizers.JsonDataGeneralizer.convert">(schema_automator.generalizers.JsonDataGeneralizer method)</a>
+</li>
+        <li><a href="packages/generalizers.html#schema_automator.generalizers.RdfDataGeneralizer.convert">(schema_automator.generalizers.RdfDataGeneralizer method)</a>
+</li>
+        <li><a href="packages/importers.html#schema_automator.importers.DOSDPImportEngine.convert">(schema_automator.importers.DOSDPImportEngine method)</a>
+</li>
+        <li><a href="packages/importers.html#schema_automator.importers.FrictionlessImportEngine.convert">(schema_automator.importers.FrictionlessImportEngine method)</a>
+</li>
+        <li><a href="packages/importers.html#schema_automator.importers.JsonSchemaImportEngine.convert">(schema_automator.importers.JsonSchemaImportEngine method)</a>
+</li>
+        <li><a href="packages/importers.html#schema_automator.importers.OwlImportEngine.convert">(schema_automator.importers.OwlImportEngine method)</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="packages/generalizers.html#schema_automator.generalizers.CsvDataGeneralizer.convert_dicts">convert_dicts() (schema_automator.generalizers.CsvDataGeneralizer method)</a>
+</li>
+      <li><a href="packages/generalizers.html#schema_automator.generalizers.CsvDataGeneralizer.convert_from_dataframe">convert_from_dataframe() (schema_automator.generalizers.CsvDataGeneralizer method)</a>
+</li>
+      <li><a href="packages/generalizers.html#schema_automator.generalizers.CsvDataGeneralizer.convert_multiple">convert_multiple() (schema_automator.generalizers.CsvDataGeneralizer method)</a>
+</li>
+      <li><a href="packages/generalizers.html#schema_automator.generalizers.CsvDataGeneralizer.convert_to_edge_slots">convert_to_edge_slots() (schema_automator.generalizers.CsvDataGeneralizer method)</a>
+</li>
+      <li><a href="packages/importers.html#schema_automator.importers.DOSDPImportEngine.create_class">create_class() (schema_automator.importers.DOSDPImportEngine method)</a>
+</li>
+      <li><a href="packages/generalizers.html#schema_automator.generalizers.CsvDataGeneralizer">CsvDataGeneralizer (class in schema_automator.generalizers)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="D">D</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="packages/generalizers.html#schema_automator.generalizers.CsvDataGeneralizer.data_dictionary_row_count">data_dictionary_row_count (schema_automator.generalizers.CsvDataGeneralizer attribute)</a>
+</li>
+      <li>
+    DB
+
+      <ul>
+        <li><a href="cli.html#cmdoption-schemauto-import-sql-arg-DB">schemauto-import-sql command line option</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="packages/importers.html#schema_automator.importers.DOSDPImportEngine">DOSDPImportEngine (class in schema_automator.importers)</a>
+</li>
+      <li><a href="packages/generalizers.html#schema_automator.generalizers.CsvDataGeneralizer.downcase_header">downcase_header (schema_automator.generalizers.CsvDataGeneralizer attribute)</a>
+</li>
+      <li>
+    DPFILES
+
+      <ul>
+        <li><a href="cli.html#cmdoption-schemauto-import-dosdps-arg-DPFILES">schemauto-import-dosdps command line option</a>
+</li>
+      </ul></li>
+  </ul></td>
+</tr></table>
+
+<h2 id="E">E</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="packages/annotators.html#schema_automator.annotators.SchemaAnnotator.enrich">enrich() (schema_automator.annotators.SchemaAnnotator method)</a>
+</li>
+      <li><a href="packages/generalizers.html#schema_automator.generalizers.CsvDataGeneralizer.enum_columns">enum_columns (schema_automator.generalizers.CsvDataGeneralizer attribute)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="packages/generalizers.html#schema_automator.generalizers.CsvDataGeneralizer.enum_mask_columns">enum_mask_columns (schema_automator.generalizers.CsvDataGeneralizer attribute)</a>
+</li>
+      <li><a href="packages/generalizers.html#schema_automator.generalizers.CsvDataGeneralizer.enum_strlen_threshold">enum_strlen_threshold (schema_automator.generalizers.CsvDataGeneralizer attribute)</a>
+</li>
+      <li><a href="packages/generalizers.html#schema_automator.generalizers.CsvDataGeneralizer.enum_threshold">enum_threshold (schema_automator.generalizers.CsvDataGeneralizer attribute)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="F">F</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="packages/importers.html#schema_automator.importers.FrictionlessImportEngine">FrictionlessImportEngine (class in schema_automator.importers)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="I">I</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="packages/generalizers.html#schema_automator.generalizers.CsvDataGeneralizer.infer_foreign_keys">infer_foreign_keys (schema_automator.generalizers.CsvDataGeneralizer attribute)</a>
+</li>
+      <li><a href="packages/generalizers.html#schema_automator.generalizers.CsvDataGeneralizer.infer_linkages">infer_linkages() (schema_automator.generalizers.CsvDataGeneralizer method)</a>
+</li>
+      <li><a href="packages/generalizers.html#schema_automator.generalizers.JsonDataGeneralizer.inline_as_dict_slot_keys">inline_as_dict_slot_keys (schema_automator.generalizers.JsonDataGeneralizer attribute)</a>
+</li>
+      <li>
+    INPUT
+
+      <ul>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-json-arg-INPUT">schemauto-generalize-json command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-toml-arg-INPUT">schemauto-generalize-toml command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-frictionless-arg-INPUT">schemauto-import-frictionless command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-json-schema-arg-INPUT">schemauto-import-json-schema command line option</a>
+</li>
+      </ul></li>
+  </ul></td>
+</tr></table>
+
+<h2 id="J">J</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="packages/generalizers.html#schema_automator.generalizers.JsonDataGeneralizer">JsonDataGeneralizer (class in schema_automator.generalizers)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="packages/annotators.html#schema_automator.annotators.JsonLdAnnotator">JsonLdAnnotator (class in schema_automator.annotators)</a>
+</li>
+      <li><a href="packages/importers.html#schema_automator.importers.JsonSchemaImportEngine">JsonSchemaImportEngine (class in schema_automator.importers)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="M">M</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="packages/generalizers.html#schema_automator.generalizers.CsvDataGeneralizer.max_enum_size">max_enum_size (schema_automator.generalizers.CsvDataGeneralizer attribute)</a>
+</li>
+      <li><a href="packages/generalizers.html#schema_automator.generalizers.CsvDataGeneralizer.max_pk_len">max_pk_len (schema_automator.generalizers.CsvDataGeneralizer attribute)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="packages/generalizers.html#schema_automator.generalizers.CsvDataGeneralizer.min_distinct_fk_val">min_distinct_fk_val (schema_automator.generalizers.CsvDataGeneralizer attribute)</a>
+</li>
+      <li>
+    module
+
+      <ul>
+        <li><a href="packages/src/schema_automator.utils.schemautils.html#module-schema_automator.utils.schemautils">schema_automator.utils.schemautils</a>
+</li>
+      </ul></li>
+  </ul></td>
+</tr></table>
+
+<h2 id="O">O</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li>
+    OWLFILE
+
+      <ul>
+        <li><a href="cli.html#cmdoption-schemauto-import-owl-arg-OWLFILE">schemauto-import-owl command line option</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="packages/importers.html#schema_automator.importers.OwlImportEngine">OwlImportEngine (class in schema_automator.importers)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="R">R</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="packages/generalizers.html#schema_automator.generalizers.RdfDataGeneralizer">RdfDataGeneralizer (class in schema_automator.generalizers)</a>
+</li>
+      <li>
+    RDFFILE
+
+      <ul>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-rdf-arg-RDFFILE">schemauto-generalize-rdf command line option</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li>
+    RDFSFILE
+
+      <ul>
+        <li><a href="cli.html#cmdoption-schemauto-import-rdfs-arg-RDFSFILE">schemauto-import-rdfs command line option</a>
+</li>
+      </ul></li>
+      <li><a href="packages/generalizers.html#schema_automator.generalizers.CsvDataGeneralizer.robot">robot (schema_automator.generalizers.CsvDataGeneralizer attribute)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="S">S</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li>
+    SCHEMA
+
+      <ul>
+        <li><a href="cli.html#cmdoption-schemauto-annotate-schema-arg-SCHEMA">schemauto-annotate-schema command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-annotate-using-jsonld-arg-SCHEMA">schemauto-annotate-using-jsonld command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-enrich-schema-arg-SCHEMA">schemauto-enrich-schema command line option</a>
+</li>
+      </ul></li>
+      <li>
+    schema_automator.utils.schemautils
+
+      <ul>
+        <li><a href="packages/src/schema_automator.utils.schemautils.html#module-schema_automator.utils.schemautils">module</a>
+</li>
+      </ul></li>
+      <li><a href="packages/generalizers.html#schema_automator.generalizers.CsvDataGeneralizer.schema_name">schema_name (schema_automator.generalizers.CsvDataGeneralizer attribute)</a>
+</li>
+      <li><a href="packages/annotators.html#schema_automator.annotators.SchemaAnnotator">SchemaAnnotator (class in schema_automator.annotators)</a>
+</li>
+      <li>
+    schemauto command line option
+
+      <ul>
+        <li><a href="cli.html#cmdoption-schemauto-q">--quiet</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-v">--verbose</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-q">-q</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-v">-v</a>
+</li>
+      </ul></li>
+      <li>
+    schemauto-annotate-schema command line option
+
+      <ul>
+        <li><a href="cli.html#cmdoption-schemauto-annotate-schema-curie-only">--curie-only</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-annotate-schema-i">--input</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-annotate-schema-curie-only">--no-curie-only</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-annotate-schema-o">--output</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-annotate-schema-i">-i</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-annotate-schema-o">-o</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-annotate-schema-arg-SCHEMA">SCHEMA</a>
+</li>
+      </ul></li>
+      <li>
+    schemauto-annotate-using-jsonld command line option
+
+      <ul>
+        <li><a href="cli.html#cmdoption-schemauto-annotate-using-jsonld-o">--output</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-annotate-using-jsonld-o">-o</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-annotate-using-jsonld-arg-SCHEMA">SCHEMA</a>
+</li>
+      </ul></li>
+      <li>
+    schemauto-enrich-schema command line option
+
+      <ul>
+        <li><a href="cli.html#cmdoption-schemauto-enrich-schema-annotate">--annotate</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-enrich-schema-i">--input</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-enrich-schema-annotate">--no-annotate</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-enrich-schema-o">--output</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-enrich-schema-i">-i</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-enrich-schema-o">-o</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-enrich-schema-arg-SCHEMA">SCHEMA</a>
+</li>
+      </ul></li>
+      <li>
+    schemauto-generalize-htmltable command line option
+
+      <ul>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-htmltable-c">--class-name</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-htmltable-s">--column-separator</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-htmltable-data-output">--data-output</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-htmltable-downcase-header">--downcase-header</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-htmltable-E">--enum-columns</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-htmltable-enum-threshold">--enum-threshold</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-htmltable-max-enum-size">--max-enum-size</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-htmltable-downcase-header">--no-downcase-header</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-htmltable-pandera">--no-pandera</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-htmltable-snakecase-header">--no-snakecase-header</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-htmltable-o">--output</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-htmltable-pandera">--pandera</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-htmltable-n">--schema-name</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-htmltable-snakecase-header">--snakecase-header</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-htmltable-table-number">--table-number</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-htmltable-c">-c</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-htmltable-E">-E</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-htmltable-n">-n</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-htmltable-o">-o</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-htmltable-s">-s</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-htmltable-arg-URL">URL</a>
+</li>
+      </ul></li>
+      <li>
+    schemauto-generalize-json command line option
+
+      <ul>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-json-container-class-name">--container-class-name</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-json-depluralize">--depluralize</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-json-E">--enum-columns</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-json-enum-mask-columns">--enum-mask-columns</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-json-enum-threshold">--enum-threshold</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-json-f">--format</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-json-inlined-map">--inlined-map</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-json-max-enum-size">--max-enum-size</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-json-depluralize">--no-depluralized</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-json-omit-null">--no-omit-null</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-json-omit-null">--omit-null</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-json-o">--output</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-json-n">--schema-name</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-json-E">-E</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-json-f">-f</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-json-n">-n</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-json-o">-o</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-json-arg-INPUT">INPUT</a>
+</li>
+      </ul></li>
+      <li>
+    schemauto-generalize-rdf command line option
+
+      <ul>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-rdf-d">--dir</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-rdf-o">--output</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-rdf-d">-d</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-rdf-o">-o</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-rdf-arg-RDFFILE">RDFFILE</a>
+</li>
+      </ul></li>
+      <li>
+    schemauto-generalize-toml command line option
+
+      <ul>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-toml-container-class-name">--container-class-name</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-toml-E">--enum-columns</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-toml-enum-mask-columns">--enum-mask-columns</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-toml-enum-threshold">--enum-threshold</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-toml-max-enum-size">--max-enum-size</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-toml-omit-null">--no-omit-null</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-toml-omit-null">--omit-null</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-toml-o">--output</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-toml-n">--schema-name</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-toml-E">-E</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-toml-n">-n</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-toml-o">-o</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-toml-arg-INPUT">INPUT</a>
+</li>
+      </ul></li>
+      <li>
+    schemauto-generalize-tsv command line option
+
+      <ul>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-tsv-A">--annotator</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-tsv-c">--class-name</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-tsv-s">--column-separator</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-tsv-data-dictionary-row-count">--data-dictionary-row-count</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-tsv-downcase-header">--downcase-header</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-tsv-E">--enum-columns</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-tsv-enum-threshold">--enum-threshold</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-tsv-max-enum-size">--max-enum-size</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-tsv-downcase-header">--no-downcase-header</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-tsv-pandera">--no-pandera</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-tsv-robot">--no-robot</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-tsv-snakecase-header">--no-snakecase-header</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-tsv-o">--output</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-tsv-pandera">--pandera</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-tsv-robot">--robot</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-tsv-n">--schema-name</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-tsv-snakecase-header">--snakecase-header</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-tsv-A">-A</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-tsv-c">-c</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-tsv-E">-E</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-tsv-n">-n</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-tsv-o">-o</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-tsv-s">-s</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-tsv-arg-TSVFILE">TSVFILE</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li>
+    schemauto-generalize-tsvs command line option
+
+      <ul>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-tsvs-s">--column-separator</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-tsvs-downcase-header">--downcase-header</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-tsvs-E">--enum-columns</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-tsvs-enum-threshold">--enum-threshold</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-tsvs-max-enum-size">--max-enum-size</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-tsvs-downcase-header">--no-downcase-header</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-tsvs-robot">--no-robot</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-tsvs-snakecase-header">--no-snakecase-header</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-tsvs-o">--output</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-tsvs-robot">--robot</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-tsvs-n">--schema-name</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-tsvs-snakecase-header">--snakecase-header</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-tsvs-E">-E</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-tsvs-n">-n</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-tsvs-o">-o</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-tsvs-s">-s</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-tsvs-arg-TSVFILES">TSVFILES</a>
+</li>
+      </ul></li>
+      <li>
+    schemauto-import-dosdps command line option
+
+      <ul>
+        <li><a href="cli.html#cmdoption-schemauto-import-dosdps-range-as-enums">--no-range-as-enums</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-dosdps-o">--output</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-dosdps-range-as-enums">--range-as-enums</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-dosdps-n">--schema-name</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-dosdps-n">-n</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-dosdps-o">-o</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-dosdps-arg-DPFILES">DPFILES</a>
+</li>
+      </ul></li>
+      <li>
+    schemauto-import-frictionless command line option
+
+      <ul>
+        <li><a href="cli.html#cmdoption-schemauto-import-frictionless-o">--output</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-frictionless-schema-id">--schema-id</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-frictionless-n">--schema-name</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-frictionless-n">-n</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-frictionless-o">-o</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-frictionless-arg-INPUT">INPUT</a>
+</li>
+      </ul></li>
+      <li>
+    schemauto-import-htmltable command line option
+
+      <ul>
+        <li><a href="cli.html#cmdoption-schemauto-import-htmltable-c">--class-name</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-htmltable-columns">--columns</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-htmltable-data-output">--data-output</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-htmltable-element-type">--element-type</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-htmltable-o">--output</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-htmltable-parent">--parent</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-htmltable-n">--schema-name</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-htmltable-table-number">--table-number</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-htmltable-c">-c</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-htmltable-n">-n</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-htmltable-o">-o</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-htmltable-arg-URL">URL</a>
+</li>
+      </ul></li>
+      <li>
+    schemauto-import-json-schema command line option
+
+      <ul>
+        <li><a href="cli.html#cmdoption-schemauto-import-json-schema-f">--format</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-json-schema-import-project">--import-project</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-json-schema-import-project">--no-import-project</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-json-schema-use-attributes">--no-use-attributes</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-json-schema-o">--output</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-json-schema-n">--schema-name</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-json-schema-use-attributes">--use-attributes</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-json-schema-f">-f</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-json-schema-n">-n</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-json-schema-o">-o</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-json-schema-arg-INPUT">INPUT</a>
+</li>
+      </ul></li>
+      <li>
+    schemauto-import-owl command line option
+
+      <ul>
+        <li><a href="cli.html#cmdoption-schemauto-import-owl-I">--identifier</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-owl-model-uri">--model-uri</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-owl-0">--output</a>, <a href="cli.html#cmdoption-schemauto-import-owl-o">[1]</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-owl-n">--schema-name</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-owl-I">-I</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-owl-n">-n</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-owl-0">-o</a>, <a href="cli.html#cmdoption-schemauto-import-owl-o">[1]</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-owl-arg-OWLFILE">OWLFILE</a>
+</li>
+      </ul></li>
+      <li>
+    schemauto-import-rdfs command line option
+
+      <ul>
+        <li><a href="cli.html#cmdoption-schemauto-import-rdfs-0">--identifier</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-rdfs-I">--input-type</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-rdfs-metamodel-mappings">--metamodel-mappings</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-rdfs-model-uri">--model-uri</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-rdfs-1">--output</a>, <a href="cli.html#cmdoption-schemauto-import-rdfs-o">[1]</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-rdfs-n">--schema-name</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-rdfs-0">-I</a>, <a href="cli.html#cmdoption-schemauto-import-rdfs-I">[1]</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-rdfs-n">-n</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-rdfs-1">-o</a>, <a href="cli.html#cmdoption-schemauto-import-rdfs-o">[1]</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-rdfs-arg-RDFSFILE">RDFSFILE</a>
+</li>
+      </ul></li>
+      <li>
+    schemauto-import-sql command line option
+
+      <ul>
+        <li><a href="cli.html#cmdoption-schemauto-import-sql-o">--output</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-sql-n">--schema-name</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-sql-n">-n</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-sql-o">-o</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-sql-arg-DB">DB</a>
+</li>
+      </ul></li>
+      <li><a href="packages/generalizers.html#schema_automator.generalizers.CsvDataGeneralizer.snakecase_header">snakecase_header (schema_automator.generalizers.CsvDataGeneralizer attribute)</a>
+</li>
+      <li><a href="packages/generalizers.html#schema_automator.generalizers.CsvDataGeneralizer.source_schema">source_schema (schema_automator.generalizers.CsvDataGeneralizer attribute)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="T">T</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="packages/importers.html#schema_automator.importers.JsonSchemaImportEngine.translate_object">translate_object() (schema_automator.importers.JsonSchemaImportEngine method)</a>
+</li>
+      <li>
+    TSVFILE
+
+      <ul>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-tsv-arg-TSVFILE">schemauto-generalize-tsv command line option</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li>
+    TSVFILES
+
+      <ul>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-tsvs-arg-TSVFILES">schemauto-generalize-tsvs command line option</a>
+</li>
+      </ul></li>
+  </ul></td>
+</tr></table>
+
+<h2 id="U">U</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li>
+    URL
+
+      <ul>
+        <li><a href="cli.html#cmdoption-schemauto-generalize-htmltable-arg-URL">schemauto-generalize-htmltable command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-htmltable-arg-URL">schemauto-import-htmltable command line option</a>
+</li>
+      </ul></li>
+  </ul></td>
+</tr></table>
+
+
+
+	    </div>
+            <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2022, LinkML Developers.
+    </p>
+  </div>
+
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/jucacrispim/sphinx_pdj_theme">theme</a> provided by <a href="http://poraodojuca.net">Porão do Juca</a>.
+
+</footer>
+	</div>
+	</div>
+	  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+    <script type="text/javascript" src="_static/documentation_options.js">
+
+    </script>
+    <script type="text/javascript" src="_static/jquery.js">
+
+    </script>
+    <script type="text/javascript" src="_static/underscore.js">
+
+    </script>
+    <script type="text/javascript" src="_static/doctools.js">
+
+    </script>
+    <script type="text/javascript" src="https://unpkg.com/mermaid/dist/mermaid.min.js">
+
+    </script>
+    <script type="text/javascript" src="None">
+
+    </script>
+
+  
+
+   <script type="text/javascript"
+           src="_static/js/theme.js"></script>
+
+   <script type="text/javascript"
+           src="_static/js/pdj.js"></script>
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+  </body>
+</html>

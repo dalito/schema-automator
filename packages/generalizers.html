@@ -1,0 +1,788 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xml:lang="" lang="" version="-//W3C//DTD XHTML 1.1//EN" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  
+  <title>Generalizers &mdash; Schema Automator  documentation</title>
+  
+
+  
+
+  
+
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'/>
+    <link rel="stylesheet" href="../_static/css/pdj.css" type="text/css" />
+
+  
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  
+    <link rel="stylesheet" href="../_static/css/pdj.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="Schema Automator  documentation" href="../index.html"/>
+        <link rel="up" title="Packages" href="index.html"/>
+        <link rel="next" title="Annotators" href="annotators.html"/>
+        <link rel="prev" title="Importers" href="importers.html"/>
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="cache-control" content="public" />
+    <meta name="robots" content="follow, all" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Add jQuery library -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+  </head>
+
+  <body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../index.html" class="fa fa-home"> Schema Automator </a>
+        <div role="search">
+	  <form id ="rtd-search-form" class="wy-form"
+		action="../search.html" method="get">
+	    <input type="text" name="q" placeholder="Search docs" />
+	    <input type="hidden" name="check_keywords" value="yes" />
+	    <input type="hidden" name="area" value="default" />
+	  </form>
+	</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	
+          
+          
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">LinkML Schema Automator</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../introduction.html">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../install.html">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cli.html">Command Line</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Packages</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html#indices-and-tables">Indices and tables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../introduction.html">Introduction</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../introduction.html#generalization-from-instance-data">Generalization from Instance Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../introduction.html#importing-from-alternative-modeling-frameworks">Importing from alternative modeling frameworks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../introduction.html#annotating-schemas">Annotating schemas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../introduction.html#general-utilities">General Utilities</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../install.html">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../install.html#direct-installation">Direct Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../install.html#running-via-docker">Running via Docker</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../cli.html">Command Line</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../cli.html#preamble">Preamble</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cli.html#main-commands">Main commands</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Packages</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="importers.html">Importers</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Generalizers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="annotators.html">Annotators</a></li>
+</ul>
+</li>
+</ul>
+
+          
+        
+
+      </div>
+      &nbsp;
+    </nav>
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      <nav class="wy-nav-top" id="barra-mobile" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="#">Porão do Juca</a>
+      </nav>
+
+      <div class="wy-nav-content">
+	<div class="fundo-claro">
+	</div>
+	<div class="fundo-escuro">
+	</div>
+
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+	    
+	    <!-- <ul class="wy-breadcrumbs"> -->
+	    <!--   <li><a href="#">Docs</a> &raquo;</li> -->
+
+	    <!--   <li>Features</li> -->
+	    <!--   <li class="wy-breadcrumbs-aside"> -->
+
+	    <!-- 	<a href="_sources/index.txt" rel="nofollow"> View page source</a> -->
+
+	    <!--   </li> -->
+	    <!-- </ul> -->
+	    <!-- <hr/> -->
+	  </div>
+
+          <div role="main" class="">
+
+	    <div id="content" class="hfeed entry-container hentry">
+  <section id="generalizers">
+<h1>Generalizers<a class="headerlink" href="#generalizers" title="Permalink to this headline">¶</a></h1>
+<p>Generalizers take example data and <em>generalizes</em> to a schema</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Generalization is inherently a heuristic process, this should be viewed as a bootstrapping process
+that <em>semi</em>-automates the creation of a new schema for you.</p>
+</div>
+<section id="generalizing-from-a-single-tsv">
+<h2>Generalizing from a single TSV<a class="headerlink" href="#generalizing-from-a-single-tsv" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">schemauto</span>  <span class="n">generalize</span><span class="o">-</span><span class="n">csv</span> <span class="n">tests</span><span class="o">/</span><span class="n">resources</span><span class="o">/</span><span class="n">NWT_wildfires_biophysical_2016</span><span class="o">.</span><span class="n">tsv</span> <span class="o">-</span><span class="n">o</span> <span class="n">wildfire</span><span class="o">.</span><span class="n">yaml</span>
+</pre></div>
+</div>
+<p>The schema will have a slot for every column, e,g:</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">classes</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">Observation</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">slots</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">site</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">plot</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">plot_size</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">date</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">observer</span>
+</pre></div>
+</div>
+<p>Ranges will be auto-inferred, e.g.:</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">slots</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">site</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">examples</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">value</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ZF20-105</span>
+<span class="w">    </span><span class="nt">range</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">string</span>
+<span class="w">  </span><span class="nt">plot</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">examples</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">value</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;6&#39;</span>
+<span class="w">    </span><span class="nt">range</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">integer</span>
+<span class="w">  </span><span class="nt">plot_size</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">examples</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">value</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">10X10</span>
+<span class="w">    </span><span class="nt">range</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">plot_size_enum</span>
+<span class="w">  </span><span class="nt">date</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">examples</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">value</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;2016-07-09&#39;</span>
+<span class="w">    </span><span class="nt">range</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">datetime</span>
+</pre></div>
+</div>
+<p>Enums will be automatically inferred:</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">enums</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">plot_size_enum</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">permissible_values</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">10X10</span><span class="p">:</span>
+<span class="w">        </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">10X10</span>
+<span class="w">      </span><span class="nt">5x5</span><span class="p">:</span>
+<span class="w">        </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5x5</span>
+<span class="w">      </span><span class="nt">2.5X2.5</span><span class="p">:</span>
+<span class="w">        </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2.5X2.5</span>
+<span class="w">      </span><span class="nt">5X5</span><span class="p">:</span>
+<span class="w">        </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5X5</span>
+<span class="w">      </span><span class="nt">3x3</span><span class="p">:</span>
+<span class="w">        </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">3x3</span>
+<span class="w">  </span><span class="nt">ecosystem_enum</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">permissible_values</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">Open Fen</span><span class="p">:</span>
+<span class="w">        </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Open Fen</span>
+<span class="w">      </span><span class="nt">Treed Fen</span><span class="p">:</span>
+<span class="w">        </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Treed Fen</span>
+<span class="w">      </span><span class="nt">Black Spruce</span><span class="p">:</span>
+<span class="w">        </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Black Spruce</span>
+<span class="w">      </span><span class="nt">Poor Fen</span><span class="p">:</span>
+<span class="w">        </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Poor Fen</span>
+<span class="w">      </span><span class="nt">Fen</span><span class="p">:</span>
+<span class="w">        </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Fen</span>
+<span class="w">      </span><span class="nt">Lowland</span><span class="p">:</span>
+<span class="w">        </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Lowland</span>
+<span class="w">      </span><span class="nt">Upland</span><span class="p">:</span>
+<span class="w">        </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Upland</span>
+<span class="w">      </span><span class="nt">Bog</span><span class="p">:</span>
+<span class="w">        </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Bog</span>
+<span class="w">      </span><span class="nt">Lowland Black Spruce</span><span class="p">:</span>
+<span class="w">        </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Lowland Black Spruce</span>
+</pre></div>
+</div>
+</section>
+<section id="chaining-an-annotator">
+<h2>Chaining an annotator<a class="headerlink" href="#chaining-an-annotator" title="Permalink to this headline">¶</a></h2>
+<p>If you provide an <code class="docutils literal notranslate"><span class="pre">--annotator</span></code> option you can auto-annotate enums:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">schemauto</span>  <span class="n">generalize</span><span class="o">-</span><span class="n">csv</span> \
+    <span class="o">--</span><span class="n">annotator</span> <span class="n">bioportal</span><span class="p">:</span><span class="n">envo</span> \
+    <span class="n">tests</span><span class="o">/</span><span class="n">resources</span><span class="o">/</span><span class="n">NWT_wildfires_biophysical_2016</span><span class="o">.</span><span class="n">tsv</span> \
+    <span class="o">-</span><span class="n">o</span> <span class="n">wildfire</span><span class="o">.</span><span class="n">yaml</span>
+</pre></div>
+</div>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">ecosystem_enum</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">from_schema</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://w3id.org/MySchema</span>
+<span class="w">  </span><span class="nt">permissible_values</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">Open Fen</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Open Fen</span>
+<span class="w">      </span><span class="nt">meaning</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ENVO:00000232</span>
+<span class="w">      </span><span class="nt">exact_mappings</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ENVO:00000232</span>
+<span class="w">    </span><span class="nt">Treed Fen</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Treed Fen</span>
+<span class="w">      </span><span class="nt">meaning</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ENVO:00000232</span>
+<span class="w">      </span><span class="nt">exact_mappings</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ENVO:00000232</span>
+<span class="w">    </span><span class="nt">Black Spruce</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Black Spruce</span>
+<span class="w">    </span><span class="nt">Poor Fen</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Poor Fen</span>
+<span class="w">      </span><span class="nt">meaning</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ENVO:00000232</span>
+<span class="w">      </span><span class="nt">exact_mappings</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ENVO:00000232</span>
+<span class="w">    </span><span class="nt">Fen</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Fen</span>
+<span class="w">      </span><span class="nt">meaning</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ENVO:00000232</span>
+<span class="w">    </span><span class="nt">Lowland</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Lowland</span>
+<span class="w">    </span><span class="nt">Upland</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Upland</span>
+<span class="w">      </span><span class="nt">meaning</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ENVO:00000182</span>
+<span class="w">    </span><span class="nt">Bog</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Bog</span>
+<span class="w">      </span><span class="nt">meaning</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ENVO:01000534</span>
+<span class="w">      </span><span class="nt">exact_mappings</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ENVO:01000535</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ENVO:00000044</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ENVO:01001209</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ENVO:01000527</span>
+<span class="w">    </span><span class="nt">Lowland Black Spruce</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Lowland Black Spruce</span>
+</pre></div>
+</div>
+<p>The annotation can also be run as a separate step</p>
+<p>See <a class="reference internal" href="annotators.html#annotators"><span class="std std-ref">Annotators</span></a></p>
+</section>
+<section id="generalizing-from-multiple-tsvs">
+<h2>Generalizing from multiple TSVs<a class="headerlink" href="#generalizing-from-multiple-tsvs" title="Permalink to this headline">¶</a></h2>
+<p>You can use the <code class="docutils literal notranslate"><span class="pre">generalize-tsvs</span></code> command to generalize from <em>multiple</em> TSVs, with
+foreign key linkages auto-inferred.</p>
+<p>For example, given a file <code class="docutils literal notranslate"><span class="pre">envo.tsv</span></code>:</p>
+<table class="docutils align-default" id="id1">
+<caption><span class="caption-text">environments</span><a class="headerlink" href="#id1" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>envo term id</p></th>
+<th class="head"><p>envo term label</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>ENVO_01000752</p></td>
+<td><p>area of barren land</p></td>
+</tr>
+<tr class="row-odd"><td><p>ENVO_01001570</p></td>
+<td><p>terrestrial ecoregion</p></td>
+</tr>
+<tr class="row-even"><td><p>ENVO_01001581</p></td>
+<td><p>sea surface layer</p></td>
+</tr>
+<tr class="row-odd"><td><p>ENVO_01001582</p></td>
+<td><p>forest floor</p></td>
+</tr>
+</tbody>
+</table>
+<p>And a file file <code class="docutils literal notranslate"><span class="pre">samples.tsv</span></code>:</p>
+<table class="docutils align-default" id="id2">
+<caption><span class="caption-text">samples</span><a class="headerlink" href="#id2" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>BIOSAMPLE_ID</p></th>
+<th class="head"><p>BIOSAMPLE_NAME</p></th>
+<th class="head"><p>ENVO_BIOME_ID</p></th>
+<th class="head"><p>ENVO_FEATURE_ID</p></th>
+<th class="head"><p>ENVO_MATERIAL_ID</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>156554</p></td>
+<td><p>Enriched cells from forest soil in Barre Woods Harvard Forest LTER site, Petersham, Massachusetts, United States - Alteio_BWOrgControl_Nextera2</p></td>
+<td><p>ENVO_01000174</p></td>
+<td><p>ENVO_01000159</p></td>
+<td><p>ENVO_00002261</p></td>
+</tr>
+<tr class="row-odd"><td><p>156649</p></td>
+<td><p>Enriched cells from forest soil in Barre Woods Harvard Forest LTER site, Petersham, Massachusetts, United States - Alteio_BWOrgHeat_Nextera5</p></td>
+<td><p>ENVO_01000174</p></td>
+<td><p>ENVO_01000159</p></td>
+<td><p>ENVO_00005781</p></td>
+</tr>
+<tr class="row-even"><td><p>156728</p></td>
+<td><p>Enriched cells from forest soil in Barre Woods Harvard Forest LTER site, Petersham, Massachusetts, United States - Alteio_BWOrgHeat_Nextera84</p></td>
+<td><p>ENVO_01000174</p></td>
+<td><p>ENVO_01000159</p></td>
+<td><p>ENVO_00005781</p></td>
+</tr>
+<tr class="row-odd"><td><p>156738</p></td>
+<td><p>Enriched cells from forest soil in Barre Woods Harvard Forest LTER site, Petersham, Massachusetts, United States - Alteio_BWMinControl_Nextera2</p></td>
+<td><p>ENVO_01000174</p></td>
+<td><p>ENVO_01001275</p></td>
+<td><p>ENVO_00002261</p></td>
+</tr>
+</tbody>
+</table>
+<p>We can create a multi-class schema, with foreign keys inferred:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">schemauto</span> <span class="n">generalize</span><span class="o">-</span><span class="n">tsvs</span> <span class="o">--</span><span class="n">infer</span><span class="o">-</span><span class="n">foreign</span><span class="o">-</span><span class="n">keys</span> <span class="n">sample</span><span class="o">.</span><span class="n">tsv</span> <span class="n">envo</span><span class="o">.</span><span class="n">tsv</span>
+</pre></div>
+</div>
+<p>This will generate a schema with two classes, where the join between the sample table and the term table
+is inferred:</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+<dl class="simple">
+<dt>classes:</dt><dd><dl class="simple">
+<dt>sample:</dt><dd><p>slots:
+- BIOSAMPLE_ID
+- BIOSAMPLE_NAME
+- ENVO_BIOME_ID
+- ENVO_FEATURE_ID
+- ENVO_MATERIAL_ID</p>
+</dd>
+<dt>envo:</dt><dd><p>slots:
+- ENVO_ID
+- ENVO_LABEL</p>
+</dd>
+</dl>
+</dd>
+<dt>slots:</dt><dd><dl class="simple">
+<dt>BIOSAMPLE_ID:</dt><dd><p>range: integer</p>
+</dd>
+<dt>BIOSAMPLE_NAME:</dt><dd><p>range: string</p>
+</dd>
+<dt>ENVO_BIOME_ID:</dt><dd><p>examples:
+- value: ENVO_01000022
+range: envo</p>
+</dd>
+<dt>ENVO_FEATURE_ID:</dt><dd><p>range: envo</p>
+</dd>
+<dt>ENVO_MATERIAL_ID:</dt><dd><p>range: envo</p>
+</dd>
+<dt>ENVO_ID:</dt><dd><p>identifier: true
+range: string</p>
+</dd>
+<dt>ENVO_LABEL:</dt><dd><p>range: string</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</section>
+<section id="generalizing-from-tables-on-the-web">
+<h2>Generalizing from tables on the web<a class="headerlink" href="#generalizing-from-tables-on-the-web" title="Permalink to this headline">¶</a></h2>
+<p>You can use <code class="docutils literal notranslate"><span class="pre">generalize-htmltable</span></code></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">schemauto</span>  <span class="n">generalize</span><span class="o">-</span><span class="n">htmltable</span>  <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="o">.</span><span class="n">nature</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">articles</span><span class="o">/</span><span class="n">s41467</span><span class="o">-</span><span class="mi">022</span><span class="o">-</span><span class="mi">31626</span><span class="o">-</span><span class="mi">4</span><span class="o">/</span><span class="n">tables</span><span class="o">/</span><span class="mi">1</span>
+</pre></div>
+</div>
+<p>Will generate:</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">example</span>
+<span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">example</span>
+<span class="nt">id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://w3id.org/example</span>
+<span class="nt">imports</span><span class="p">:</span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">linkml:types</span>
+<span class="nt">prefixes</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">linkml</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://w3id.org/linkml/</span>
+<span class="w">  </span><span class="nt">example</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://w3id.org/example</span>
+<span class="nt">default_prefix</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">example</span>
+<span class="nt">slots</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">GWAS trait</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">examples</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">value</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;</span><span class="se">\xC2</span><span class="s">&quot;</span>
+<span class="w">    </span><span class="nt">range</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">string</span>
+<span class="w">  </span><span class="nt">Peak GWAS SNP</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">examples</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">value</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rs2974298</span>
+<span class="w">    </span><span class="nt">range</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">string</span>
+<span class="w">  </span><span class="nt">Gene</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">examples</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">value</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">SMIM19</span>
+<span class="w">    </span><span class="nt">range</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">string</span>
+<span class="w">  </span><span class="nt">NK cell cis eSNP</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">examples</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">value</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rs2974348</span>
+<span class="w">    </span><span class="nt">range</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">string</span>
+<span class="w">  </span><span class="nt">TWAS Z score</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">examples</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">value</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;3.809&#39;</span>
+<span class="w">    </span><span class="nt">range</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">string</span>
+<span class="w">  </span><span class="nt">TWAS P value</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">examples</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">value</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;0.0001&#39;</span>
+<span class="w">    </span><span class="nt">range</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">string</span>
+<span class="nt">classes</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">example</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">slots</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">GWAS trait</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Peak GWAS SNP</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Gene</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">NK cell cis eSNP</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">TWAS Z score</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">TWAS P value</span>
+</pre></div>
+</div>
+</section>
+<section id="generalizing-from-json">
+<h2>Generalizing from JSON<a class="headerlink" href="#generalizing-from-json" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="packages">
+<h2>Packages<a class="headerlink" href="#packages" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="schema_automator.generalizers.CsvDataGeneralizer">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">schema_automator.generalizers.</span></span><span class="sig-name descname"><span class="pre">CsvDataGeneralizer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">identifier_slots:</span> <span class="pre">typing.List[str]</span> <span class="pre">=</span> <span class="pre">&lt;factory&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">depluralize_class_names:</span> <span class="pre">bool</span> <span class="pre">=</span> <span class="pre">&lt;factory&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">inflect_engine:</span> <span class="pre">inflect.engine</span> <span class="pre">=</span> <span class="pre">&lt;factory&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">column_separator:</span> <span class="pre">str</span> <span class="pre">=</span> <span class="pre">'\t'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">schema_name:</span> <span class="pre">str</span> <span class="pre">=</span> <span class="pre">'example'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">robot:</span> <span class="pre">bool</span> <span class="pre">=</span> <span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data_dictionary_row_count:</span> <span class="pre">int</span> <span class="pre">=</span> <span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">enum_columns:</span> <span class="pre">typing.List[str]</span> <span class="pre">=</span> <span class="pre">&lt;factory&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">enum_mask_columns:</span> <span class="pre">typing.List[str]</span> <span class="pre">=</span> <span class="pre">&lt;factory&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">enum_threshold:</span> <span class="pre">float</span> <span class="pre">=</span> <span class="pre">0.1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">enum_strlen_threshold:</span> <span class="pre">int</span> <span class="pre">=</span> <span class="pre">30</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_enum_size:</span> <span class="pre">int</span> <span class="pre">=</span> <span class="pre">50</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">downcase_header:</span> <span class="pre">bool</span> <span class="pre">=</span> <span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">snakecase_header:</span> <span class="pre">bool</span> <span class="pre">=</span> <span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">infer_foreign_keys:</span> <span class="pre">bool</span> <span class="pre">=</span> <span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_pk_len:</span> <span class="pre">int</span> <span class="pre">=</span> <span class="pre">60</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">min_distinct_fk_val:</span> <span class="pre">int</span> <span class="pre">=</span> <span class="pre">8</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">source_schema:</span> <span class="pre">typing.Optional[linkml_runtime.linkml_model.meta.SchemaDefinition]</span> <span class="pre">=</span> <span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/schema_automator/generalizers/csv_data_generalizer.html#CsvDataGeneralizer"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#schema_automator.generalizers.CsvDataGeneralizer" title="Permalink to this definition">¶</a></dt>
+<dd><p>A Generalizer that generalizes from example CSV/TSV data</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="schema_automator.generalizers.CsvDataGeneralizer.column_separator">
+<span class="sig-name descname"><span class="pre">column_separator</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'\t'</span></em><a class="headerlink" href="#schema_automator.generalizers.CsvDataGeneralizer.column_separator" title="Permalink to this definition">¶</a></dt>
+<dd><p>character that separates columns in the input file</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="schema_automator.generalizers.CsvDataGeneralizer.convert">
+<span class="sig-name descname"><span class="pre">convert</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">linkml_runtime.linkml_model.meta.SchemaDefinition</span></span></span><a class="reference internal" href="../_modules/schema_automator/generalizers/csv_data_generalizer.html#CsvDataGeneralizer.convert"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#schema_automator.generalizers.CsvDataGeneralizer.convert" title="Permalink to this definition">¶</a></dt>
+<dd><p>Converts a single TSV file to a single-class schema</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>file</strong> – </p></li>
+<li><p><strong>kwargs</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="schema_automator.generalizers.CsvDataGeneralizer.convert_dicts">
+<span class="sig-name descname"><span class="pre">convert_dicts</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rr</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">Dict</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">schema_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'example'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">class_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'Observation'</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">linkml_runtime.linkml_model.meta.SchemaDefinition</span><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="../_modules/schema_automator/generalizers/csv_data_generalizer.html#CsvDataGeneralizer.convert_dicts"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#schema_automator.generalizers.CsvDataGeneralizer.convert_dicts" title="Permalink to this definition">¶</a></dt>
+<dd><p>Converts a list of row objects to a schema.</p>
+<p>Each row is a data item, presumed to be of the same type,
+that is generalized.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>rr</strong> – </p></li>
+<li><p><strong>schema_name</strong> – </p></li>
+<li><p><strong>class_name</strong> – </p></li>
+<li><p><strong>kwargs</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="schema_automator.generalizers.CsvDataGeneralizer.convert_from_dataframe">
+<span class="sig-name descname"><span class="pre">convert_from_dataframe</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">pandas.core.frame.DataFrame</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">linkml_runtime.linkml_model.meta.SchemaDefinition</span></span></span><a class="reference internal" href="../_modules/schema_automator/generalizers/csv_data_generalizer.html#CsvDataGeneralizer.convert_from_dataframe"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#schema_automator.generalizers.CsvDataGeneralizer.convert_from_dataframe" title="Permalink to this definition">¶</a></dt>
+<dd><p>Converts a single dataframe to a single-class schema</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>df</strong> – </p></li>
+<li><p><strong>kwargs</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="schema_automator.generalizers.CsvDataGeneralizer.convert_multiple">
+<span class="sig-name descname"><span class="pre">convert_multiple</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">files</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">linkml_runtime.linkml_model.meta.SchemaDefinition</span></span></span><a class="reference internal" href="../_modules/schema_automator/generalizers/csv_data_generalizer.html#CsvDataGeneralizer.convert_multiple"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#schema_automator.generalizers.CsvDataGeneralizer.convert_multiple" title="Permalink to this definition">¶</a></dt>
+<dd><p>Converts multiple TSVs to a schema</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>files</strong> – </p></li>
+<li><p><strong>kwargs</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="schema_automator.generalizers.CsvDataGeneralizer.convert_to_edge_slots">
+<span class="sig-name descname"><span class="pre">convert_to_edge_slots</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">all_tsv_rows</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'Observation'</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">Dict</span><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="../_modules/schema_automator/generalizers/csv_data_generalizer.html#CsvDataGeneralizer.convert_to_edge_slots"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#schema_automator.generalizers.CsvDataGeneralizer.convert_to_edge_slots" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="simple">
+<dt>assume that TSV has 3 relevant columns:</dt><dd><ol class="arabic simple">
+<li><p>slot name to add</p></li>
+<li><p>slot definition to add</p></li>
+<li><p>examples of values for the slot</p></li>
+</ol>
+</dd>
+</dl>
+<p>also assume that these are all edge_properties at the moment.
+TODO: add parameter to allow edge or node property disambiguation.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="schema_automator.generalizers.CsvDataGeneralizer.data_dictionary_row_count">
+<span class="sig-name descname"><span class="pre">data_dictionary_row_count</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#schema_automator.generalizers.CsvDataGeneralizer.data_dictionary_row_count" title="Permalink to this definition">¶</a></dt>
+<dd><p>number of rows after header containing data dictionary information</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="schema_automator.generalizers.CsvDataGeneralizer.downcase_header">
+<span class="sig-name descname"><span class="pre">downcase_header</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">False</span></em><a class="headerlink" href="#schema_automator.generalizers.CsvDataGeneralizer.downcase_header" title="Permalink to this definition">¶</a></dt>
+<dd><p>If true, coerce column names to be lower case</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="schema_automator.generalizers.CsvDataGeneralizer.enum_columns">
+<span class="sig-name descname"><span class="pre">enum_columns</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#schema_automator.generalizers.CsvDataGeneralizer.enum_columns" title="Permalink to this definition">¶</a></dt>
+<dd><p>List of columns that are coerced into enums</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="schema_automator.generalizers.CsvDataGeneralizer.enum_mask_columns">
+<span class="sig-name descname"><span class="pre">enum_mask_columns</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#schema_automator.generalizers.CsvDataGeneralizer.enum_mask_columns" title="Permalink to this definition">¶</a></dt>
+<dd><p>List of columns that are excluded from being enums</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="schema_automator.generalizers.CsvDataGeneralizer.enum_strlen_threshold">
+<span class="sig-name descname"><span class="pre">enum_strlen_threshold</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">30</span></em><a class="headerlink" href="#schema_automator.generalizers.CsvDataGeneralizer.enum_strlen_threshold" title="Permalink to this definition">¶</a></dt>
+<dd><p>Maximimum length of a string to be considered a permissible enum value</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="schema_automator.generalizers.CsvDataGeneralizer.enum_threshold">
+<span class="sig-name descname"><span class="pre">enum_threshold</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0.1</span></em><a class="headerlink" href="#schema_automator.generalizers.CsvDataGeneralizer.enum_threshold" title="Permalink to this definition">¶</a></dt>
+<dd><p>If number if distinct values divided by total number of values is greater than this, then the column is considered an enum</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="schema_automator.generalizers.CsvDataGeneralizer.infer_foreign_keys">
+<span class="sig-name descname"><span class="pre">infer_foreign_keys</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">False</span></em><a class="headerlink" href="#schema_automator.generalizers.CsvDataGeneralizer.infer_foreign_keys" title="Permalink to this definition">¶</a></dt>
+<dd><p>For multi-CVS files, infer linkages between rows</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="schema_automator.generalizers.CsvDataGeneralizer.infer_linkages">
+<span class="sig-name descname"><span class="pre">infer_linkages</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">files</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">schema_automator.generalizers.csv_data_generalizer.ForeignKey</span><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="../_modules/schema_automator/generalizers/csv_data_generalizer.html#CsvDataGeneralizer.infer_linkages"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#schema_automator.generalizers.CsvDataGeneralizer.infer_linkages" title="Permalink to this definition">¶</a></dt>
+<dd><p>Heuristic procedure for determining which tables are linked to others via implicit foreign keys</p>
+<p>If all values of one column FT.FC are present in column PT.PC, then FT.FC is a potential foreign key
+and PC is a potential primary key of PT.</p>
+<p>This procedure can generate false positives, so additional heuristics are applied. Each potential
+foreign key relationship gets an ad-hoc score:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>links across tables score more highly than within</p></li>
+<li><p>suffixes such as _id are more likely on PK and FK tables</p></li>
+<li><p>the foreign key column table is likely to start with the base column name</p></li>
+</ul>
+</div></blockquote>
+<p>In addition, if there are competing primary keys for a table, the top scoring one is selected</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="schema_automator.generalizers.CsvDataGeneralizer.max_enum_size">
+<span class="sig-name descname"><span class="pre">max_enum_size</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">50</span></em><a class="headerlink" href="#schema_automator.generalizers.CsvDataGeneralizer.max_enum_size" title="Permalink to this definition">¶</a></dt>
+<dd><p>Max number of permissible values for a column to be considered an enum</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="schema_automator.generalizers.CsvDataGeneralizer.max_pk_len">
+<span class="sig-name descname"><span class="pre">max_pk_len</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">60</span></em><a class="headerlink" href="#schema_automator.generalizers.CsvDataGeneralizer.max_pk_len" title="Permalink to this definition">¶</a></dt>
+<dd><p>Maximum length to be considered for a primary key column. Note: URIs can be long</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="schema_automator.generalizers.CsvDataGeneralizer.min_distinct_fk_val">
+<span class="sig-name descname"><span class="pre">min_distinct_fk_val</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">8</span></em><a class="headerlink" href="#schema_automator.generalizers.CsvDataGeneralizer.min_distinct_fk_val" title="Permalink to this definition">¶</a></dt>
+<dd><p>For inferring foreign keys, there must be a minimum number.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="schema_automator.generalizers.CsvDataGeneralizer.robot">
+<span class="sig-name descname"><span class="pre">robot</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">False</span></em><a class="headerlink" href="#schema_automator.generalizers.CsvDataGeneralizer.robot" title="Permalink to this definition">¶</a></dt>
+<dd><p>If true, conforms to robot template format. Data dictionary rows start with ‘&gt;’</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="schema_automator.generalizers.CsvDataGeneralizer.schema_name">
+<span class="sig-name descname"><span class="pre">schema_name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'example'</span></em><a class="headerlink" href="#schema_automator.generalizers.CsvDataGeneralizer.schema_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>LinkML schema name (no spaces)</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="schema_automator.generalizers.CsvDataGeneralizer.snakecase_header">
+<span class="sig-name descname"><span class="pre">snakecase_header</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">False</span></em><a class="headerlink" href="#schema_automator.generalizers.CsvDataGeneralizer.snakecase_header" title="Permalink to this definition">¶</a></dt>
+<dd><p>If true, coerce column names to be snake case</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="schema_automator.generalizers.CsvDataGeneralizer.source_schema">
+<span class="sig-name descname"><span class="pre">source_schema</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">linkml_runtime.linkml_model.meta.SchemaDefinition</span><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#schema_automator.generalizers.CsvDataGeneralizer.source_schema" title="Permalink to this definition">¶</a></dt>
+<dd><p>Optional base schema to draw from</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="schema_automator.generalizers.JsonDataGeneralizer">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">schema_automator.generalizers.</span></span><span class="sig-name descname"><span class="pre">JsonDataGeneralizer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">identifier_slots:</span> <span class="pre">typing.List[str]</span> <span class="pre">=</span> <span class="pre">&lt;factory&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">depluralize_class_names:</span> <span class="pre">bool</span> <span class="pre">=</span> <span class="pre">&lt;factory&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">inflect_engine:</span> <span class="pre">inflect.engine</span> <span class="pre">=</span> <span class="pre">&lt;factory&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mappings:</span> <span class="pre">typing.Optional[dict]</span> <span class="pre">=</span> <span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">omit_null:</span> <span class="pre">typing.Optional[bool]</span> <span class="pre">=</span> <span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">inline_as_dict_slot_keys:</span> <span class="pre">typing.Optional[typing.Mapping[str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">str]]</span> <span class="pre">=</span> <span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/schema_automator/generalizers/json_instance_generalizer.html#JsonDataGeneralizer"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#schema_automator.generalizers.JsonDataGeneralizer" title="Permalink to this definition">¶</a></dt>
+<dd><p>A generalizer that abstract from JSON instance data</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="schema_automator.generalizers.JsonDataGeneralizer.convert">
+<span class="sig-name descname"><span class="pre">convert</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Dict</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">format</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'json'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">container_class_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'Container'</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">linkml_runtime.linkml_model.meta.SchemaDefinition</span></span></span><a class="reference internal" href="../_modules/schema_automator/generalizers/json_instance_generalizer.html#JsonDataGeneralizer.convert"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#schema_automator.generalizers.JsonDataGeneralizer.convert" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generalizes from a JSON file</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>input</strong> – </p></li>
+<li><p><strong>format</strong> – </p></li>
+<li><p><strong>container_class_name</strong> – </p></li>
+<li><p><strong>kwargs</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="schema_automator.generalizers.JsonDataGeneralizer.inline_as_dict_slot_keys">
+<span class="sig-name descname"><span class="pre">inline_as_dict_slot_keys</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Mapping</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#schema_automator.generalizers.JsonDataGeneralizer.inline_as_dict_slot_keys" title="Permalink to this definition">¶</a></dt>
+<dd><p>Mapping between the name of a dict-inlined slot and the unique key for that entity</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="schema_automator.generalizers.RdfDataGeneralizer">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">schema_automator.generalizers.</span></span><span class="sig-name descname"><span class="pre">RdfDataGeneralizer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">identifier_slots:</span> <span class="pre">typing.List[str]</span> <span class="pre">=</span> <span class="pre">&lt;factory&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">depluralize_class_names:</span> <span class="pre">bool</span> <span class="pre">=</span> <span class="pre">&lt;factory&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">inflect_engine:</span> <span class="pre">inflect.engine</span> <span class="pre">=</span> <span class="pre">&lt;factory&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mappings:</span> <span class="pre">typing.Optional[dict]</span> <span class="pre">=</span> <span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/schema_automator/generalizers/rdf_data_generalizer.html#RdfDataGeneralizer"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#schema_automator.generalizers.RdfDataGeneralizer" title="Permalink to this definition">¶</a></dt>
+<dd><p>A generalizer that generalizes from source RDF turtle data</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="schema_automator.generalizers.RdfDataGeneralizer.convert">
+<span class="sig-name descname"><span class="pre">convert</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dir</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">linkml_runtime.linkml_model.meta.SchemaDefinition</span></span></span><a class="reference internal" href="../_modules/schema_automator/generalizers/rdf_data_generalizer.html#RdfDataGeneralizer.convert"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#schema_automator.generalizers.RdfDataGeneralizer.convert" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generalizes from an RDF file</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>file</strong> – </p></li>
+<li><p><strong>dir</strong> – </p></li>
+<li><p><strong>kwargs</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+</section>
+
+
+	    </div>
+            <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="annotators.html" class="btn btn-neutral float-right" title="Annotators">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="importers.html" class="btn btn-neutral" title="Importers"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2022, LinkML Developers.
+    </p>
+  </div>
+
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/jucacrispim/sphinx_pdj_theme">theme</a> provided by <a href="http://poraodojuca.net">Porão do Juca</a>.
+
+</footer>
+	</div>
+	</div>
+	  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+    <script type="text/javascript" src="../_static/documentation_options.js">
+
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js">
+
+    </script>
+    <script type="text/javascript" src="../_static/underscore.js">
+
+    </script>
+    <script type="text/javascript" src="../_static/doctools.js">
+
+    </script>
+    <script type="text/javascript" src="https://unpkg.com/mermaid/dist/mermaid.min.js">
+
+    </script>
+    <script type="text/javascript" src="../None">
+
+    </script>
+
+  
+
+   <script type="text/javascript"
+           src="../_static/js/theme.js"></script>
+
+   <script type="text/javascript"
+           src="../_static/js/pdj.js"></script>
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+  </body>
+</html>
