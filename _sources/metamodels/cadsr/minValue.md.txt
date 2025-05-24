@@ -1,0 +1,75 @@
+
+
+# Slot: minValue 
+
+
+
+URI: [cadsr:minValue](https://example.org/cadsrminValue)
+Alias: minValue
+
+<!-- no inheritance hierarchy -->
+
+
+
+
+
+## Applicable Classes
+
+| Name | Description | Modifies Slot |
+| --- | --- | --- |
+| [ValueDomain](ValueDomain.md) |  |  yes  |
+
+
+
+
+
+
+
+## Properties
+
+* Range: NONE
+
+
+
+
+
+## Identifier and Mapping Information
+
+
+
+
+
+
+
+### Schema Source
+
+
+* from schema: https://example.org/cadsr
+
+
+
+
+## Mappings
+
+| Mapping Type | Mapped Value |
+| ---  | ---  |
+| self | cadsr:minValue |
+| native | cadsr:minValue |
+
+
+
+
+## LinkML Source
+
+<details>
+```yaml
+name: minValue
+from_schema: https://example.org/cadsr
+rank: 1000
+alias: minValue
+domain_of:
+- ValueDomain
+required: false
+
+```
+</details>

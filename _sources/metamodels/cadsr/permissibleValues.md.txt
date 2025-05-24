@@ -1,0 +1,78 @@
+
+
+# Slot: permissibleValues 
+
+
+
+URI: [cadsr:permissibleValues](https://example.org/cadsrpermissibleValues)
+Alias: permissibleValues
+
+<!-- no inheritance hierarchy -->
+
+
+
+
+
+## Applicable Classes
+
+| Name | Description | Modifies Slot |
+| --- | --- | --- |
+| [CRDCDataElement](CRDCDataElement.md) |  |  yes  |
+
+
+
+
+
+
+
+## Properties
+
+* Range: [PermissibleValue](PermissibleValue.md)
+
+* Multivalued: True
+
+
+
+
+
+## Identifier and Mapping Information
+
+
+
+
+
+
+
+### Schema Source
+
+
+* from schema: https://example.org/cadsr
+
+
+
+
+## Mappings
+
+| Mapping Type | Mapped Value |
+| ---  | ---  |
+| self | cadsr:permissibleValues |
+| native | cadsr:permissibleValues |
+
+
+
+
+## LinkML Source
+
+<details>
+```yaml
+name: permissibleValues
+from_schema: https://example.org/cadsr
+rank: 1000
+alias: permissibleValues
+domain_of:
+- CRDCDataElement
+range: permissibleValue
+multivalued: true
+
+```
+</details>

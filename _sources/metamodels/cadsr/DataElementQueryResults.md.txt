@@ -1,0 +1,83 @@
+
+
+# Slot: DataElementQueryResults 
+
+
+
+URI: [cadsr:DataElementQueryResults](https://example.org/cadsrDataElementQueryResults)
+Alias: DataElementQueryResults
+
+<!-- no inheritance hierarchy -->
+
+
+
+
+
+## Applicable Classes
+
+| Name | Description | Modifies Slot |
+| --- | --- | --- |
+| [DataElementqueryGETResponse](DataElementqueryGETResponse.md) |  |  yes  |
+| [DataElementqueryContextGETResponse](DataElementqueryContextGETResponse.md) |  |  yes  |
+| [DataElementqueryConceptGETResponse](DataElementqueryConceptGETResponse.md) |  |  yes  |
+
+
+
+
+
+
+
+## Properties
+
+* Range: [DataElementQuery](DataElementQuery.md)
+
+* Multivalued: True
+
+
+
+
+
+## Identifier and Mapping Information
+
+
+
+
+
+
+
+### Schema Source
+
+
+* from schema: https://example.org/cadsr
+
+
+
+
+## Mappings
+
+| Mapping Type | Mapped Value |
+| ---  | ---  |
+| self | cadsr:DataElementQueryResults |
+| native | cadsr:DataElementQueryResults |
+
+
+
+
+## LinkML Source
+
+<details>
+```yaml
+name: DataElementQueryResults
+from_schema: https://example.org/cadsr
+rank: 1000
+alias: DataElementQueryResults
+domain_of:
+- DataElementqueryContext_GET_response
+- DataElementqueryConcept_GET_response
+- DataElementquery_GET_response
+range: DataElementQuery
+required: false
+multivalued: true
+
+```
+</details>

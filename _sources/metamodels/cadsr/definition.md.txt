@@ -1,0 +1,74 @@
+
+
+# Slot: definition 
+
+
+
+URI: [cadsr:definition](https://example.org/cadsrdefinition)
+Alias: definition
+
+<!-- no inheritance hierarchy -->
+
+
+
+
+
+## Applicable Classes
+
+| Name | Description | Modifies Slot |
+| --- | --- | --- |
+| [Concept](Concept.md) |  |  yes  |
+
+
+
+
+
+
+
+## Properties
+
+* Range: NONE
+
+
+
+
+
+## Identifier and Mapping Information
+
+
+
+
+
+
+
+### Schema Source
+
+
+* from schema: https://example.org/cadsr
+
+
+
+
+## Mappings
+
+| Mapping Type | Mapped Value |
+| ---  | ---  |
+| self | cadsr:definition |
+| native | cadsr:definition |
+
+
+
+
+## LinkML Source
+
+<details>
+```yaml
+name: definition
+from_schema: https://example.org/cadsr
+rank: 1000
+alias: definition
+domain_of:
+- Concept
+
+```
+</details>

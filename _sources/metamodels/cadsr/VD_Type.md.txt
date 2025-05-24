@@ -1,0 +1,80 @@
+
+
+# Slot: VD_Type 
+
+
+_Value Domain type_
+
+
+
+
+
+URI: [cadsr:VD_Type](https://example.org/cadsrVD_Type)
+Alias: VD_Type
+
+<!-- no inheritance hierarchy -->
+
+
+
+
+
+## Applicable Classes
+
+| Name | Description | Modifies Slot |
+| --- | --- | --- |
+| [CRDCDataElement](CRDCDataElement.md) |  |  yes  |
+
+
+
+
+
+
+
+## Properties
+
+* Range: NONE
+
+
+
+
+
+## Identifier and Mapping Information
+
+
+
+
+
+
+
+### Schema Source
+
+
+* from schema: https://example.org/cadsr
+
+
+
+
+## Mappings
+
+| Mapping Type | Mapped Value |
+| ---  | ---  |
+| self | cadsr:VD_Type |
+| native | cadsr:VD_Type |
+
+
+
+
+## LinkML Source
+
+<details>
+```yaml
+name: VD Type
+description: Value Domain type
+from_schema: https://example.org/cadsr
+rank: 1000
+alias: VD_Type
+domain_of:
+- CRDCDataElement
+
+```
+</details>

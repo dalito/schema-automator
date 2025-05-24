@@ -1,0 +1,87 @@
+
+
+# Slot: DataElement 
+
+
+
+URI: [cadsr:DataElement](https://example.org/cadsrDataElement)
+Alias: DataElement
+
+<!-- no inheritance hierarchy -->
+
+
+
+
+
+## Applicable Classes
+
+| Name | Description | Modifies Slot |
+| --- | --- | --- |
+| [DataElementpublicIdGETResponse](DataElementpublicIdGETResponse.md) |  |  yes  |
+| [DataElementContainer](DataElementContainer.md) |  |  no  |
+
+
+
+
+
+
+
+## Properties
+
+* Range: [DataElement](DataElement.md)
+
+## Usages
+
+| used by | used in | type | used |
+| ---  | --- | --- | --- |
+| [DataElementContainer](DataElementContainer.md) | [DataElement](DataElement.md) | range | [DataElement](DataElement.md) |
+| [DataElementpublicIdGETResponse](DataElementpublicIdGETResponse.md) | [DataElement](DataElement.md) | range | [DataElement](DataElement.md) |
+
+
+
+
+
+
+## Identifier and Mapping Information
+
+
+
+
+
+
+
+### Schema Source
+
+
+* from schema: https://example.org/cadsr
+
+
+
+
+## Mappings
+
+| Mapping Type | Mapped Value |
+| ---  | ---  |
+| self | cadsr:DataElement |
+| native | cadsr:DataElement |
+| exact | linkml:SlotDefinition |
+
+
+
+
+## LinkML Source
+
+<details>
+```yaml
+name: DataElement
+from_schema: https://example.org/cadsr
+rank: 1000
+alias: DataElement
+domain_of:
+- DataElementContainer
+- DataElementpublicId_GET_response
+range: DataElement
+required: false
+
+```
+</details>

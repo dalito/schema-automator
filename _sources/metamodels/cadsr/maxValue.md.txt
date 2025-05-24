@@ -1,0 +1,75 @@
+
+
+# Slot: maxValue 
+
+
+
+URI: [cadsr:maxValue](https://example.org/cadsrmaxValue)
+Alias: maxValue
+
+<!-- no inheritance hierarchy -->
+
+
+
+
+
+## Applicable Classes
+
+| Name | Description | Modifies Slot |
+| --- | --- | --- |
+| [ValueDomain](ValueDomain.md) |  |  yes  |
+
+
+
+
+
+
+
+## Properties
+
+* Range: NONE
+
+
+
+
+
+## Identifier and Mapping Information
+
+
+
+
+
+
+
+### Schema Source
+
+
+* from schema: https://example.org/cadsr
+
+
+
+
+## Mappings
+
+| Mapping Type | Mapped Value |
+| ---  | ---  |
+| self | cadsr:maxValue |
+| native | cadsr:maxValue |
+
+
+
+
+## LinkML Source
+
+<details>
+```yaml
+name: maxValue
+from_schema: https://example.org/cadsr
+rank: 1000
+alias: maxValue
+domain_of:
+- ValueDomain
+required: false
+
+```
+</details>

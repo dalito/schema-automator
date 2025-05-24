@@ -1,0 +1,80 @@
+
+
+# Slot: CRDC_Name 
+
+
+_CRDC Name_
+
+
+
+
+
+URI: [cadsr:CRDC_Name](https://example.org/cadsrCRDC_Name)
+Alias: CRDC_Name
+
+<!-- no inheritance hierarchy -->
+
+
+
+
+
+## Applicable Classes
+
+| Name | Description | Modifies Slot |
+| --- | --- | --- |
+| [CRDCDataElement](CRDCDataElement.md) |  |  yes  |
+
+
+
+
+
+
+
+## Properties
+
+* Range: NONE
+
+
+
+
+
+## Identifier and Mapping Information
+
+
+
+
+
+
+
+### Schema Source
+
+
+* from schema: https://example.org/cadsr
+
+
+
+
+## Mappings
+
+| Mapping Type | Mapped Value |
+| ---  | ---  |
+| self | cadsr:CRDC_Name |
+| native | cadsr:CRDC_Name |
+
+
+
+
+## LinkML Source
+
+<details>
+```yaml
+name: CRDC Name
+description: CRDC Name
+from_schema: https://example.org/cadsr
+rank: 1000
+alias: CRDC_Name
+domain_of:
+- CRDCDataElement
+
+```
+</details>

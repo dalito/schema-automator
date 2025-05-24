@@ -1,0 +1,98 @@
+
+
+# Slot: endDate 
+
+
+_The day, month and year this item becomes no longer allowed._
+
+
+
+
+
+URI: [cadsr:endDate](https://example.org/cadsrendDate)
+Alias: endDate
+
+<!-- no inheritance hierarchy -->
+
+
+
+
+
+## Applicable Classes
+
+| Name | Description | Modifies Slot |
+| --- | --- | --- |
+| [DataElementQuery](DataElementQuery.md) |  |  yes  |
+| [RepresentationTerm](RepresentationTerm.md) |  |  yes  |
+| [ValueMeaning](ValueMeaning.md) |  |  yes  |
+| [DataElementConcept](DataElementConcept.md) |  |  yes  |
+| [ConceptualDomain](ConceptualDomain.md) |  |  yes  |
+| [ValueDomain](ValueDomain.md) |  |  yes  |
+| [Property](Property.md) |  |  yes  |
+| [ObjectClass](ObjectClass.md) | Class or class expression used to annotated a DataElementConcept (DEC) |  yes  |
+| [CDEPermissibleValue](CDEPermissibleValue.md) |  |  yes  |
+| [DataElement](DataElement.md) | An element representing a specific metadata element |  yes  |
+
+
+
+
+
+
+
+## Properties
+
+* Range: NONE
+
+
+
+
+
+## Identifier and Mapping Information
+
+
+
+
+
+
+
+### Schema Source
+
+
+* from schema: https://example.org/cadsr
+
+
+
+
+## Mappings
+
+| Mapping Type | Mapped Value |
+| ---  | ---  |
+| self | cadsr:endDate |
+| native | cadsr:endDate |
+
+
+
+
+## LinkML Source
+
+<details>
+```yaml
+name: endDate
+description: The day, month and year this item becomes no longer allowed.
+from_schema: https://example.org/cadsr
+rank: 1000
+alias: endDate
+domain_of:
+- Property
+- ConceptualDomain
+- DataElement
+- ValueDomain
+- ObjectClass
+- DataElementConcept
+- ValueMeaning
+- RepresentationTerm
+- CDEPermissibleValue
+- DataElementQuery
+
+```
+</details>

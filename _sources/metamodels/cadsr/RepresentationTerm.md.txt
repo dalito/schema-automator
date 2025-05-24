@@ -1,0 +1,83 @@
+
+
+# Slot: RepresentationTerm 
+
+
+
+URI: [cadsr:RepresentationTerm](https://example.org/cadsrRepresentationTerm)
+Alias: RepresentationTerm
+
+<!-- no inheritance hierarchy -->
+
+
+
+
+
+## Applicable Classes
+
+| Name | Description | Modifies Slot |
+| --- | --- | --- |
+| [ValueDomain](ValueDomain.md) |  |  yes  |
+
+
+
+
+
+
+
+## Properties
+
+* Range: [RepresentationTerm](RepresentationTerm.md)
+
+## Usages
+
+| used by | used in | type | used |
+| ---  | --- | --- | --- |
+| [ValueDomain](ValueDomain.md) | [RepresentationTerm](RepresentationTerm.md) | range | [RepresentationTerm](RepresentationTerm.md) |
+
+
+
+
+
+
+## Identifier and Mapping Information
+
+
+
+
+
+
+
+### Schema Source
+
+
+* from schema: https://example.org/cadsr
+
+
+
+
+## Mappings
+
+| Mapping Type | Mapped Value |
+| ---  | ---  |
+| self | cadsr:RepresentationTerm |
+| native | cadsr:RepresentationTerm |
+
+
+
+
+## LinkML Source
+
+<details>
+```yaml
+name: RepresentationTerm
+from_schema: https://example.org/cadsr
+rank: 1000
+alias: RepresentationTerm
+domain_of:
+- ValueDomain
+range: RepresentationTerm
+required: false
+
+```
+</details>

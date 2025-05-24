@@ -1,0 +1,75 @@
+
+
+# Slot: constraints 
+
+
+
+URI: [frictionless:constraints](https://w3id.org/linkml/frictionless/constraints)
+Alias: constraints
+
+<!-- no inheritance hierarchy -->
+
+
+
+
+
+## Applicable Classes
+
+| Name | Description | Modifies Slot |
+| --- | --- | --- |
+| [Field](Field.md) |  |  no  |
+
+
+
+
+
+
+
+## Properties
+
+* Range: [Constraints](Constraints.md)
+
+
+
+
+
+## Identifier and Mapping Information
+
+
+
+
+
+
+
+### Schema Source
+
+
+* from schema: https://w3id.org/linkml/frictionless
+
+
+
+
+## Mappings
+
+| Mapping Type | Mapped Value |
+| ---  | ---  |
+| self | frictionless:constraints |
+| native | frictionless:constraints |
+
+
+
+
+## LinkML Source
+
+<details>
+```yaml
+name: constraints
+from_schema: https://w3id.org/linkml/frictionless
+rank: 1000
+alias: constraints
+domain_of:
+- Field
+range: Constraints
+
+```
+</details>

@@ -1,0 +1,84 @@
+
+
+# Slot: Concepts 
+
+
+
+URI: [cadsr:Concepts](https://example.org/cadsrConcepts)
+Alias: Concepts
+
+<!-- no inheritance hierarchy -->
+
+
+
+
+
+## Applicable Classes
+
+| Name | Description | Modifies Slot |
+| --- | --- | --- |
+| [ObjectClass](ObjectClass.md) | Class or class expression used to annotated a DataElementConcept (DEC) |  yes  |
+| [RepresentationTerm](RepresentationTerm.md) |  |  yes  |
+| [ValueMeaning](ValueMeaning.md) |  |  yes  |
+| [Property](Property.md) |  |  yes  |
+
+
+
+
+
+
+
+## Properties
+
+* Range: [Concept](Concept.md)
+
+* Multivalued: True
+
+
+
+
+
+## Identifier and Mapping Information
+
+
+
+
+
+
+
+### Schema Source
+
+
+* from schema: https://example.org/cadsr
+
+
+
+
+## Mappings
+
+| Mapping Type | Mapped Value |
+| ---  | ---  |
+| self | cadsr:Concepts |
+| native | cadsr:Concepts |
+
+
+
+
+## LinkML Source
+
+<details>
+```yaml
+name: Concepts
+from_schema: https://example.org/cadsr
+rank: 1000
+alias: Concepts
+domain_of:
+- Property
+- ObjectClass
+- ValueMeaning
+- RepresentationTerm
+range: Concept
+multivalued: true
+
+```
+</details>

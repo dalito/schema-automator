@@ -1,0 +1,77 @@
+
+
+# Slot: missingValues 
+
+
+
+URI: [frictionless:missingValues](https://w3id.org/linkml/frictionless/missingValues)
+Alias: missingValues
+
+<!-- no inheritance hierarchy -->
+
+
+
+
+
+## Applicable Classes
+
+| Name | Description | Modifies Slot |
+| --- | --- | --- |
+| [Schema](Schema.md) |  |  no  |
+
+
+
+
+
+
+
+## Properties
+
+* Range: NONE
+
+* Multivalued: True
+
+
+
+
+
+## Identifier and Mapping Information
+
+
+
+
+
+
+
+### Schema Source
+
+
+* from schema: https://w3id.org/linkml/frictionless
+
+
+
+
+## Mappings
+
+| Mapping Type | Mapped Value |
+| ---  | ---  |
+| self | frictionless:missingValues |
+| native | frictionless:missingValues |
+
+
+
+
+## LinkML Source
+
+<details>
+```yaml
+name: missingValues
+from_schema: https://w3id.org/linkml/frictionless
+rank: 1000
+alias: missingValues
+domain_of:
+- Schema
+multivalued: true
+
+```
+</details>

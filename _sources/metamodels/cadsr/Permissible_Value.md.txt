@@ -1,0 +1,81 @@
+
+
+# Slot: Permissible_Value 
+
+
+_A representation of a Value Meaning in a specific Value Domain the actual Value._
+
+
+
+
+
+URI: [cadsr:Permissible_Value](https://example.org/cadsrPermissible_Value)
+Alias: Permissible_Value
+
+<!-- no inheritance hierarchy -->
+
+
+
+
+
+## Applicable Classes
+
+| Name | Description | Modifies Slot |
+| --- | --- | --- |
+| [PermissibleValue](PermissibleValue.md) | List of Permissible Values |  yes  |
+
+
+
+
+
+
+
+## Properties
+
+* Range: NONE
+
+
+
+
+
+## Identifier and Mapping Information
+
+
+
+
+
+
+
+### Schema Source
+
+
+* from schema: https://example.org/cadsr
+
+
+
+
+## Mappings
+
+| Mapping Type | Mapped Value |
+| ---  | ---  |
+| self | cadsr:Permissible_Value |
+| native | cadsr:Permissible_Value |
+
+
+
+
+## LinkML Source
+
+<details>
+```yaml
+name: Permissible Value
+description: A representation of a Value Meaning in a specific Value Domain the actual
+  Value.
+from_schema: https://example.org/cadsr
+rank: 1000
+alias: Permissible_Value
+domain_of:
+- permissibleValue
+
+```
+</details>

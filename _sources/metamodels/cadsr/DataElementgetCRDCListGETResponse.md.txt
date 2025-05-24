@@ -1,0 +1,129 @@
+
+
+# Class: DataElementgetCRDCListGETResponse 
+
+
+
+URI: [cadsr:DataElementgetCRDCListGETResponse](https://example.org/cadsrDataElementgetCRDCListGETResponse)
+
+
+
+
+
+
+```mermaid
+ classDiagram
+    class DataElementgetCRDCListGETResponse
+    click DataElementgetCRDCListGETResponse href "../DataElementgetCRDCListGETResponse"
+      DataElementgetCRDCListGETResponse : CRDCDataElements
+        
+          
+    
+        
+        
+        DataElementgetCRDCListGETResponse --> "*" CRDCDataElement : CRDCDataElements
+        click CRDCDataElement href "../CRDCDataElement"
+    
+
+        
+      
+```
+
+
+
+
+<!-- no inheritance hierarchy -->
+
+
+## Slots
+
+| Name | Cardinality and Range | Description | Inheritance |
+| ---  | --- | --- | --- |
+| [CRDCDataElements](CRDCDataElements.md) | * <br/> [CRDCDataElement](CRDCDataElement.md) |  | direct |
+
+
+
+
+
+
+
+
+
+## Identifier and Mapping Information
+
+
+
+
+
+
+
+### Schema Source
+
+
+* from schema: https://example.org/cadsr
+
+
+
+
+## Mappings
+
+| Mapping Type | Mapped Value |
+| ---  | ---  |
+| self | cadsr:DataElementgetCRDCListGETResponse |
+| native | cadsr:DataElementgetCRDCListGETResponse |
+
+
+
+
+
+
+
+## LinkML Source
+
+<!-- TODO: investigate https://stackoverflow.com/questions/37606292/how-to-create-tabbed-code-blocks-in-mkdocs-or-sphinx -->
+
+### Direct
+
+<details>
+```yaml
+name: DataElementgetCRDCList_GET_response
+from_schema: https://example.org/cadsr
+slots:
+- CRDCDataElements
+slot_usage:
+  CRDCDataElements:
+    name: CRDCDataElements
+    range: CRDCDataElement
+    required: false
+    multivalued: true
+
+```
+</details>
+
+### Induced
+
+<details>
+```yaml
+name: DataElementgetCRDCList_GET_response
+from_schema: https://example.org/cadsr
+slot_usage:
+  CRDCDataElements:
+    name: CRDCDataElements
+    range: CRDCDataElement
+    required: false
+    multivalued: true
+attributes:
+  CRDCDataElements:
+    name: CRDCDataElements
+    from_schema: https://example.org/cadsr
+    rank: 1000
+    alias: CRDCDataElements
+    owner: DataElementgetCRDCList_GET_response
+    domain_of:
+    - DataElementgetCRDCList_GET_response
+    range: CRDCDataElement
+    required: false
+    multivalued: true
+
+```
+</details>

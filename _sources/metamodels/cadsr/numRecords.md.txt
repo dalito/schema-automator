@@ -1,0 +1,79 @@
+
+
+# Slot: numRecords 
+
+
+
+URI: [cadsr:numRecords](https://example.org/cadsrnumRecords)
+Alias: numRecords
+
+<!-- no inheritance hierarchy -->
+
+
+
+
+
+## Applicable Classes
+
+| Name | Description | Modifies Slot |
+| --- | --- | --- |
+| [DataElementqueryGETResponse](DataElementqueryGETResponse.md) |  |  yes  |
+| [DataElementqueryContextGETResponse](DataElementqueryContextGETResponse.md) |  |  yes  |
+| [DataElementqueryConceptGETResponse](DataElementqueryConceptGETResponse.md) |  |  yes  |
+
+
+
+
+
+
+
+## Properties
+
+* Range: NONE
+
+
+
+
+
+## Identifier and Mapping Information
+
+
+
+
+
+
+
+### Schema Source
+
+
+* from schema: https://example.org/cadsr
+
+
+
+
+## Mappings
+
+| Mapping Type | Mapped Value |
+| ---  | ---  |
+| self | cadsr:numRecords |
+| native | cadsr:numRecords |
+
+
+
+
+## LinkML Source
+
+<details>
+```yaml
+name: numRecords
+from_schema: https://example.org/cadsr
+rank: 1000
+alias: numRecords
+domain_of:
+- DataElementqueryContext_GET_response
+- DataElementqueryConcept_GET_response
+- DataElementquery_GET_response
+required: false
+
+```
+</details>

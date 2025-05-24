@@ -1,140 +1,42 @@
+<!DOCTYPE html>
 
-
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xml:lang="" lang="" version="-//W3C//DTD XHTML 1.1//EN" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en" data-content_root="./">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  
-  <title>Index &mdash; Schema Automator  documentation</title>
-  
-
-  
-
-  
-
-    <link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'/>
-    <link rel="stylesheet" href="_static/css/pdj.css" type="text/css" />
-
-  
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-  
-    <link rel="stylesheet" href="_static/css/pdj.css" type="text/css" />
-  
-
-  
-
-  
-        <link rel="index" title="Index"
-              href="#"/>
-        <link rel="search" title="Search" href="search.html"/>
-    <link rel="top" title="Schema Automator  documentation" href="index.html"/>
-
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta http-equiv="cache-control" content="public" />
-    <meta name="robots" content="follow, all" />
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Add jQuery library -->
-    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+    <title>Index &#8212; Schema Automator  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=5ecbeea2" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=12dfc556" />
+    <script src="_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/mermaid@11.2.0/dist/mermaid.esm.min.mjs"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@mermaid-js/layout-elk@0.1.4/dist/mermaid-layout-elk.esm.min.mjs"></script>
+    <script type="module">import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11.2.0/dist/mermaid.esm.min.mjs";import elkLayouts from "https://cdn.jsdelivr.net/npm/@mermaid-js/layout-elk@0.1.4/dist/mermaid-layout-elk.esm.min.mjs";mermaid.registerLayoutLoaders(elkLayouts);mermaid.initialize({startOnLoad:false});</script>
+    <script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
+    <script type="module">
+import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11.2.0/dist/mermaid.esm.min.mjs";
+window.addEventListener("load", () => mermaid.run());
+</script>
+    <link rel="index" title="Index" href="#" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
 
-  </head>
+  
+  
 
-  <body class="wy-body-for-nav" role="document">
+  </head><body>
+  
 
-  <div class="wy-grid-for-nav">
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
-      <div class="wy-side-nav-search">
-        <a href="index.html" class="fa fa-home"> Schema Automator </a>
-        <div role="search">
-	  <form id ="rtd-search-form" class="wy-form"
-		action="search.html" method="get">
-	    <input type="text" name="q" placeholder="Search docs" />
-	    <input type="hidden" name="check_keywords" value="yes" />
-	    <input type="hidden" name="area" value="default" />
-	  </form>
-	</div>
-      </div>
-
-      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-	
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
           
-          
-              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="index.html">LinkML Schema Automator</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="introduction.html">Introduction</a></li>
-<li class="toctree-l2"><a class="reference internal" href="install.html">Installation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="cli.html">Command Line</a></li>
-<li class="toctree-l2"><a class="reference internal" href="packages/index.html">Packages</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="index.html#indices-and-tables">Indices and tables</a></li>
-<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="introduction.html#generalization-from-instance-data">Generalization from Instance Data</a></li>
-<li class="toctree-l2"><a class="reference internal" href="introduction.html#importing-from-alternative-modeling-frameworks">Importing from alternative modeling frameworks</a></li>
-<li class="toctree-l2"><a class="reference internal" href="introduction.html#annotating-schemas">Annotating schemas</a></li>
-<li class="toctree-l2"><a class="reference internal" href="introduction.html#general-utilities">General Utilities</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="install.html">Installation</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="install.html#direct-installation">Direct Installation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="install.html#running-via-docker">Running via Docker</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="cli.html">Command Line</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="cli.html#preamble">Preamble</a></li>
-<li class="toctree-l2"><a class="reference internal" href="cli.html#main-commands">Main commands</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="packages/index.html">Packages</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="packages/importers.html">Importers</a></li>
-<li class="toctree-l2"><a class="reference internal" href="packages/generalizers.html">Generalizers</a></li>
-<li class="toctree-l2"><a class="reference internal" href="packages/annotators.html">Annotators</a></li>
-</ul>
-</li>
-</ul>
 
-          
-        
-
-      </div>
-      &nbsp;
-    </nav>
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      <nav class="wy-nav-top" id="barra-mobile" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="#">Porão do Juca</a>
-      </nav>
-
-      <div class="wy-nav-content">
-	<div class="fundo-claro">
-	</div>
-	<div class="fundo-escuro">
-	</div>
-
-        <div class="rst-content">
-          <div role="navigation" aria-label="breadcrumbs navigation">
-	    
-	    <!-- <ul class="wy-breadcrumbs"> -->
-	    <!--   <li><a href="#">Docs</a> &raquo;</li> -->
-
-	    <!--   <li>Features</li> -->
-	    <!--   <li class="wy-breadcrumbs-aside"> -->
-
-	    <!-- 	<a href="_sources/index.txt" rel="nofollow"> View page source</a> -->
-
-	    <!--   </li> -->
-	    <!-- </ul> -->
-	    <!-- <hr/> -->
-	  </div>
-
-          <div role="main" class="">
-
-	    <div id="content" class="hfeed entry-container hentry">
+          <div class="body" role="main">
+            
 
 <h1 id="index">Index</h1>
 
@@ -147,6 +49,7 @@
  | <a href="#F"><strong>F</strong></a>
  | <a href="#I"><strong>I</strong></a>
  | <a href="#J"><strong>J</strong></a>
+ | <a href="#L"><strong>L</strong></a>
  | <a href="#M"><strong>M</strong></a>
  | <a href="#O"><strong>O</strong></a>
  | <a href="#R"><strong>R</strong></a>
@@ -162,7 +65,7 @@
     --annotate
 
       <ul>
-        <li><a href="cli.html#cmdoption-schemauto-enrich-schema-annotate">schemauto-enrich-schema command line option</a>
+        <li><a href="cli.html#cmdoption-schemauto-enrich-using-ontology-annotate">schemauto-enrich-using-ontology command line option</a>
 </li>
       </ul></li>
       <li>
@@ -312,6 +215,8 @@
 </li>
         <li><a href="cli.html#cmdoption-schemauto-import-json-schema-f">schemauto-import-json-schema command line option</a>
 </li>
+        <li><a href="cli.html#cmdoption-schemauto-import-rdfs-f">schemauto-import-rdfs command line option</a>
+</li>
       </ul></li>
       <li>
     --identifier
@@ -319,7 +224,7 @@
       <ul>
         <li><a href="cli.html#cmdoption-schemauto-import-owl-I">schemauto-import-owl command line option</a>
 </li>
-        <li><a href="cli.html#cmdoption-schemauto-import-rdfs-0">schemauto-import-rdfs command line option</a>
+        <li><a href="cli.html#cmdoption-schemauto-import-rdfs-I">schemauto-import-rdfs command line option</a>
 </li>
       </ul></li>
       <li>
@@ -342,14 +247,14 @@
       <ul>
         <li><a href="cli.html#cmdoption-schemauto-annotate-schema-i">schemauto-annotate-schema command line option</a>
 </li>
-        <li><a href="cli.html#cmdoption-schemauto-enrich-schema-i">schemauto-enrich-schema command line option</a>
+        <li><a href="cli.html#cmdoption-schemauto-enrich-using-ontology-i">schemauto-enrich-using-ontology command line option</a>
 </li>
       </ul></li>
       <li>
-    --input-type
+    --is-openapi
 
       <ul>
-        <li><a href="cli.html#cmdoption-schemauto-import-rdfs-I">schemauto-import-rdfs command line option</a>
+        <li><a href="cli.html#cmdoption-schemauto-import-json-schema-is-openapi">schemauto-import-json-schema command line option</a>
 </li>
       </ul></li>
       <li>
@@ -375,6 +280,13 @@
 </li>
       </ul></li>
       <li>
+    --model
+
+      <ul>
+        <li><a href="cli.html#cmdoption-schemauto-enrich-using-llm-m">schemauto-enrich-using-llm command line option</a>
+</li>
+      </ul></li>
+      <li>
     --model-uri
 
       <ul>
@@ -387,7 +299,7 @@
     --no-annotate
 
       <ul>
-        <li><a href="cli.html#cmdoption-schemauto-enrich-schema-annotate">schemauto-enrich-schema command line option</a>
+        <li><a href="cli.html#cmdoption-schemauto-enrich-using-ontology-annotate">schemauto-enrich-using-ontology command line option</a>
 </li>
       </ul></li>
       <li>
@@ -420,6 +332,13 @@
 
       <ul>
         <li><a href="cli.html#cmdoption-schemauto-import-json-schema-import-project">schemauto-import-json-schema command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --no-is-openapi
+
+      <ul>
+        <li><a href="cli.html#cmdoption-schemauto-import-json-schema-is-openapi">schemauto-import-json-schema command line option</a>
 </li>
       </ul></li>
       <li>
@@ -473,6 +392,8 @@
       <ul>
         <li><a href="cli.html#cmdoption-schemauto-import-json-schema-use-attributes">schemauto-import-json-schema command line option</a>
 </li>
+        <li><a href="cli.html#cmdoption-schemauto-import-kwalify-use-attributes">schemauto-import-kwalify command line option</a>
+</li>
       </ul></li>
       <li>
     --omit-null
@@ -491,7 +412,9 @@
 </li>
         <li><a href="cli.html#cmdoption-schemauto-annotate-using-jsonld-o">schemauto-annotate-using-jsonld command line option</a>
 </li>
-        <li><a href="cli.html#cmdoption-schemauto-enrich-schema-o">schemauto-enrich-schema command line option</a>
+        <li><a href="cli.html#cmdoption-schemauto-enrich-using-llm-o">schemauto-enrich-using-llm command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-enrich-using-ontology-o">schemauto-enrich-using-ontology command line option</a>
 </li>
         <li><a href="cli.html#cmdoption-schemauto-generalize-htmltable-o">schemauto-generalize-htmltable command line option</a>
 </li>
@@ -505,6 +428,8 @@
 </li>
         <li><a href="cli.html#cmdoption-schemauto-generalize-tsvs-o">schemauto-generalize-tsvs command line option</a>
 </li>
+        <li><a href="cli.html#cmdoption-schemauto-import-cadsr-o">schemauto-import-cadsr command line option</a>
+</li>
         <li><a href="cli.html#cmdoption-schemauto-import-dosdps-o">schemauto-import-dosdps command line option</a>
 </li>
         <li><a href="cli.html#cmdoption-schemauto-import-frictionless-o">schemauto-import-frictionless command line option</a>
@@ -513,9 +438,11 @@
 </li>
         <li><a href="cli.html#cmdoption-schemauto-import-json-schema-o">schemauto-import-json-schema command line option</a>
 </li>
+        <li><a href="cli.html#cmdoption-schemauto-import-kwalify-o">schemauto-import-kwalify command line option</a>
+</li>
         <li><a href="cli.html#cmdoption-schemauto-import-owl-0">schemauto-import-owl command line option</a>, <a href="cli.html#cmdoption-schemauto-import-owl-o">[1]</a>
 </li>
-        <li><a href="cli.html#cmdoption-schemauto-import-rdfs-1">schemauto-import-rdfs command line option</a>, <a href="cli.html#cmdoption-schemauto-import-rdfs-o">[1]</a>
+        <li><a href="cli.html#cmdoption-schemauto-import-rdfs-0">schemauto-import-rdfs command line option</a>, <a href="cli.html#cmdoption-schemauto-import-rdfs-o">[1]</a>
 </li>
         <li><a href="cli.html#cmdoption-schemauto-import-sql-o">schemauto-import-sql command line option</a>
 </li>
@@ -565,6 +492,8 @@
     --schema-id
 
       <ul>
+        <li><a href="cli.html#cmdoption-schemauto-import-cadsr-schema-id">schemauto-import-cadsr command line option</a>
+</li>
         <li><a href="cli.html#cmdoption-schemauto-import-frictionless-schema-id">schemauto-import-frictionless command line option</a>
 </li>
       </ul></li>
@@ -582,6 +511,8 @@
 </li>
         <li><a href="cli.html#cmdoption-schemauto-generalize-tsvs-n">schemauto-generalize-tsvs command line option</a>
 </li>
+        <li><a href="cli.html#cmdoption-schemauto-import-cadsr-n">schemauto-import-cadsr command line option</a>
+</li>
         <li><a href="cli.html#cmdoption-schemauto-import-dosdps-n">schemauto-import-dosdps command line option</a>
 </li>
         <li><a href="cli.html#cmdoption-schemauto-import-frictionless-n">schemauto-import-frictionless command line option</a>
@@ -589,6 +520,8 @@
         <li><a href="cli.html#cmdoption-schemauto-import-htmltable-n">schemauto-import-htmltable command line option</a>
 </li>
         <li><a href="cli.html#cmdoption-schemauto-import-json-schema-n">schemauto-import-json-schema command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-kwalify-n">schemauto-import-kwalify command line option</a>
 </li>
         <li><a href="cli.html#cmdoption-schemauto-import-owl-n">schemauto-import-owl command line option</a>
 </li>
@@ -623,12 +556,21 @@
       <ul>
         <li><a href="cli.html#cmdoption-schemauto-import-json-schema-use-attributes">schemauto-import-json-schema command line option</a>
 </li>
+        <li><a href="cli.html#cmdoption-schemauto-import-kwalify-use-attributes">schemauto-import-kwalify command line option</a>
+</li>
       </ul></li>
       <li>
     --verbose
 
       <ul>
         <li><a href="cli.html#cmdoption-schemauto-v">schemauto command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --version
+
+      <ul>
+        <li><a href="cli.html#cmdoption-schemauto-V">schemauto command line option</a>
 </li>
       </ul></li>
       <li>
@@ -679,6 +621,8 @@
 </li>
         <li><a href="cli.html#cmdoption-schemauto-import-json-schema-f">schemauto-import-json-schema command line option</a>
 </li>
+        <li><a href="cli.html#cmdoption-schemauto-import-rdfs-f">schemauto-import-rdfs command line option</a>
+</li>
       </ul></li>
       <li>
     -I
@@ -686,7 +630,7 @@
       <ul>
         <li><a href="cli.html#cmdoption-schemauto-import-owl-I">schemauto-import-owl command line option</a>
 </li>
-        <li><a href="cli.html#cmdoption-schemauto-import-rdfs-0">schemauto-import-rdfs command line option</a>, <a href="cli.html#cmdoption-schemauto-import-rdfs-I">[1]</a>
+        <li><a href="cli.html#cmdoption-schemauto-import-rdfs-I">schemauto-import-rdfs command line option</a>
 </li>
       </ul></li>
       <li>
@@ -695,7 +639,14 @@
       <ul>
         <li><a href="cli.html#cmdoption-schemauto-annotate-schema-i">schemauto-annotate-schema command line option</a>
 </li>
-        <li><a href="cli.html#cmdoption-schemauto-enrich-schema-i">schemauto-enrich-schema command line option</a>
+        <li><a href="cli.html#cmdoption-schemauto-enrich-using-ontology-i">schemauto-enrich-using-ontology command line option</a>
+</li>
+      </ul></li>
+      <li>
+    -m
+
+      <ul>
+        <li><a href="cli.html#cmdoption-schemauto-enrich-using-llm-m">schemauto-enrich-using-llm command line option</a>
 </li>
       </ul></li>
       <li>
@@ -712,6 +663,8 @@
 </li>
         <li><a href="cli.html#cmdoption-schemauto-generalize-tsvs-n">schemauto-generalize-tsvs command line option</a>
 </li>
+        <li><a href="cli.html#cmdoption-schemauto-import-cadsr-n">schemauto-import-cadsr command line option</a>
+</li>
         <li><a href="cli.html#cmdoption-schemauto-import-dosdps-n">schemauto-import-dosdps command line option</a>
 </li>
         <li><a href="cli.html#cmdoption-schemauto-import-frictionless-n">schemauto-import-frictionless command line option</a>
@@ -719,6 +672,8 @@
         <li><a href="cli.html#cmdoption-schemauto-import-htmltable-n">schemauto-import-htmltable command line option</a>
 </li>
         <li><a href="cli.html#cmdoption-schemauto-import-json-schema-n">schemauto-import-json-schema command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-kwalify-n">schemauto-import-kwalify command line option</a>
 </li>
         <li><a href="cli.html#cmdoption-schemauto-import-owl-n">schemauto-import-owl command line option</a>
 </li>
@@ -735,7 +690,9 @@
 </li>
         <li><a href="cli.html#cmdoption-schemauto-annotate-using-jsonld-o">schemauto-annotate-using-jsonld command line option</a>
 </li>
-        <li><a href="cli.html#cmdoption-schemauto-enrich-schema-o">schemauto-enrich-schema command line option</a>
+        <li><a href="cli.html#cmdoption-schemauto-enrich-using-llm-o">schemauto-enrich-using-llm command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-enrich-using-ontology-o">schemauto-enrich-using-ontology command line option</a>
 </li>
         <li><a href="cli.html#cmdoption-schemauto-generalize-htmltable-o">schemauto-generalize-htmltable command line option</a>
 </li>
@@ -749,6 +706,8 @@
 </li>
         <li><a href="cli.html#cmdoption-schemauto-generalize-tsvs-o">schemauto-generalize-tsvs command line option</a>
 </li>
+        <li><a href="cli.html#cmdoption-schemauto-import-cadsr-o">schemauto-import-cadsr command line option</a>
+</li>
         <li><a href="cli.html#cmdoption-schemauto-import-dosdps-o">schemauto-import-dosdps command line option</a>
 </li>
         <li><a href="cli.html#cmdoption-schemauto-import-frictionless-o">schemauto-import-frictionless command line option</a>
@@ -757,9 +716,11 @@
 </li>
         <li><a href="cli.html#cmdoption-schemauto-import-json-schema-o">schemauto-import-json-schema command line option</a>
 </li>
+        <li><a href="cli.html#cmdoption-schemauto-import-kwalify-o">schemauto-import-kwalify command line option</a>
+</li>
         <li><a href="cli.html#cmdoption-schemauto-import-owl-0">schemauto-import-owl command line option</a>, <a href="cli.html#cmdoption-schemauto-import-owl-o">[1]</a>
 </li>
-        <li><a href="cli.html#cmdoption-schemauto-import-rdfs-1">schemauto-import-rdfs command line option</a>, <a href="cli.html#cmdoption-schemauto-import-rdfs-o">[1]</a>
+        <li><a href="cli.html#cmdoption-schemauto-import-rdfs-0">schemauto-import-rdfs command line option</a>, <a href="cli.html#cmdoption-schemauto-import-rdfs-o">[1]</a>
 </li>
         <li><a href="cli.html#cmdoption-schemauto-import-sql-o">schemauto-import-sql command line option</a>
 </li>
@@ -783,6 +744,13 @@
 </li>
       </ul></li>
       <li>
+    -V
+
+      <ul>
+        <li><a href="cli.html#cmdoption-schemauto-V">schemauto command line option</a>
+</li>
+      </ul></li>
+      <li>
     -v
 
       <ul>
@@ -797,10 +765,14 @@
   <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="packages/annotators.html#schema_automator.annotators.JsonLdAnnotator.annotate">annotate() (schema_automator.annotators.JsonLdAnnotator method)</a>
 </li>
+      <li><a href="packages/annotators.html#schema_automator.annotators.JsonLdAnnotator.annotate_element">annotate_element() (schema_automator.annotators.JsonLdAnnotator method)</a>
+
+      <ul>
+        <li><a href="packages/annotators.html#schema_automator.annotators.SchemaAnnotator.annotate_element">(schema_automator.annotators.SchemaAnnotator method)</a>
+</li>
+      </ul></li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="packages/annotators.html#schema_automator.annotators.SchemaAnnotator.annotate_element">annotate_element() (schema_automator.annotators.SchemaAnnotator method)</a>
-</li>
       <li><a href="packages/annotators.html#schema_automator.annotators.SchemaAnnotator.annotate_schema">annotate_schema() (schema_automator.annotators.SchemaAnnotator method)</a>
 </li>
   </ul></td>
@@ -809,6 +781,8 @@
 <h2 id="C">C</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="packages/importers.html#schema_automator.importers.CADSRImportEngine">CADSRImportEngine (class in schema_automator.importers)</a>
+</li>
       <li><a href="packages/generalizers.html#schema_automator.generalizers.CsvDataGeneralizer.column_separator">column_separator (schema_automator.generalizers.CsvDataGeneralizer attribute)</a>
 </li>
       <li><a href="packages/generalizers.html#schema_automator.generalizers.CsvDataGeneralizer.convert">convert() (schema_automator.generalizers.CsvDataGeneralizer method)</a>
@@ -817,6 +791,8 @@
         <li><a href="packages/generalizers.html#schema_automator.generalizers.JsonDataGeneralizer.convert">(schema_automator.generalizers.JsonDataGeneralizer method)</a>
 </li>
         <li><a href="packages/generalizers.html#schema_automator.generalizers.RdfDataGeneralizer.convert">(schema_automator.generalizers.RdfDataGeneralizer method)</a>
+</li>
+        <li><a href="packages/importers.html#schema_automator.importers.CADSRImportEngine.convert">(schema_automator.importers.CADSRImportEngine method)</a>
 </li>
         <li><a href="packages/importers.html#schema_automator.importers.DOSDPImportEngine.convert">(schema_automator.importers.DOSDPImportEngine method)</a>
 </li>
@@ -875,8 +851,12 @@
 <h2 id="E">E</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="packages/annotators.html#schema_automator.annotators.SchemaAnnotator.enrich">enrich() (schema_automator.annotators.SchemaAnnotator method)</a>
+      <li><a href="packages/annotators.html#schema_automator.annotators.LLMAnnotator.enrich">enrich() (schema_automator.annotators.LLMAnnotator method)</a>
+
+      <ul>
+        <li><a href="packages/annotators.html#schema_automator.annotators.SchemaAnnotator.enrich">(schema_automator.annotators.SchemaAnnotator method)</a>
 </li>
+      </ul></li>
       <li><a href="packages/generalizers.html#schema_automator.generalizers.CsvDataGeneralizer.enum_columns">enum_columns (schema_automator.generalizers.CsvDataGeneralizer attribute)</a>
 </li>
   </ul></td>
@@ -915,9 +895,13 @@
 </li>
         <li><a href="cli.html#cmdoption-schemauto-generalize-toml-arg-INPUT">schemauto-generalize-toml command line option</a>
 </li>
+        <li><a href="cli.html#cmdoption-schemauto-import-cadsr-arg-INPUT">schemauto-import-cadsr command line option</a>
+</li>
         <li><a href="cli.html#cmdoption-schemauto-import-frictionless-arg-INPUT">schemauto-import-frictionless command line option</a>
 </li>
         <li><a href="cli.html#cmdoption-schemauto-import-json-schema-arg-INPUT">schemauto-import-json-schema command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-kwalify-arg-INPUT">schemauto-import-kwalify command line option</a>
 </li>
       </ul></li>
   </ul></td>
@@ -933,6 +917,14 @@
       <li><a href="packages/annotators.html#schema_automator.annotators.JsonLdAnnotator">JsonLdAnnotator (class in schema_automator.annotators)</a>
 </li>
       <li><a href="packages/importers.html#schema_automator.importers.JsonSchemaImportEngine">JsonSchemaImportEngine (class in schema_automator.importers)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="L">L</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="packages/annotators.html#schema_automator.annotators.LLMAnnotator">LLMAnnotator (class in schema_automator.annotators)</a>
 </li>
   </ul></td>
 </tr></table>
@@ -1012,7 +1004,9 @@
 </li>
         <li><a href="cli.html#cmdoption-schemauto-annotate-using-jsonld-arg-SCHEMA">schemauto-annotate-using-jsonld command line option</a>
 </li>
-        <li><a href="cli.html#cmdoption-schemauto-enrich-schema-arg-SCHEMA">schemauto-enrich-schema command line option</a>
+        <li><a href="cli.html#cmdoption-schemauto-enrich-using-llm-arg-SCHEMA">schemauto-enrich-using-llm command line option</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-enrich-using-ontology-arg-SCHEMA">schemauto-enrich-using-ontology command line option</a>
 </li>
       </ul></li>
       <li>
@@ -1034,9 +1028,13 @@
 </li>
         <li><a href="cli.html#cmdoption-schemauto-v">--verbose</a>
 </li>
+        <li><a href="cli.html#cmdoption-schemauto-V">--version</a>
+</li>
         <li><a href="cli.html#cmdoption-schemauto-q">-q</a>
 </li>
         <li><a href="cli.html#cmdoption-schemauto-v">-v</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-V">-V</a>
 </li>
       </ul></li>
       <li>
@@ -1070,22 +1068,37 @@
 </li>
       </ul></li>
       <li>
-    schemauto-enrich-schema command line option
+    schemauto-enrich-using-llm command line option
 
       <ul>
-        <li><a href="cli.html#cmdoption-schemauto-enrich-schema-annotate">--annotate</a>
+        <li><a href="cli.html#cmdoption-schemauto-enrich-using-llm-m">--model</a>
 </li>
-        <li><a href="cli.html#cmdoption-schemauto-enrich-schema-i">--input</a>
+        <li><a href="cli.html#cmdoption-schemauto-enrich-using-llm-o">--output</a>
 </li>
-        <li><a href="cli.html#cmdoption-schemauto-enrich-schema-annotate">--no-annotate</a>
+        <li><a href="cli.html#cmdoption-schemauto-enrich-using-llm-m">-m</a>
 </li>
-        <li><a href="cli.html#cmdoption-schemauto-enrich-schema-o">--output</a>
+        <li><a href="cli.html#cmdoption-schemauto-enrich-using-llm-o">-o</a>
 </li>
-        <li><a href="cli.html#cmdoption-schemauto-enrich-schema-i">-i</a>
+        <li><a href="cli.html#cmdoption-schemauto-enrich-using-llm-arg-SCHEMA">SCHEMA</a>
 </li>
-        <li><a href="cli.html#cmdoption-schemauto-enrich-schema-o">-o</a>
+      </ul></li>
+      <li>
+    schemauto-enrich-using-ontology command line option
+
+      <ul>
+        <li><a href="cli.html#cmdoption-schemauto-enrich-using-ontology-annotate">--annotate</a>
 </li>
-        <li><a href="cli.html#cmdoption-schemauto-enrich-schema-arg-SCHEMA">SCHEMA</a>
+        <li><a href="cli.html#cmdoption-schemauto-enrich-using-ontology-i">--input</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-enrich-using-ontology-annotate">--no-annotate</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-enrich-using-ontology-o">--output</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-enrich-using-ontology-i">-i</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-enrich-using-ontology-o">-o</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-enrich-using-ontology-arg-SCHEMA">SCHEMA</a>
 </li>
       </ul></li>
       <li>
@@ -1317,6 +1330,23 @@
 </li>
       </ul></li>
       <li>
+    schemauto-import-cadsr command line option
+
+      <ul>
+        <li><a href="cli.html#cmdoption-schemauto-import-cadsr-o">--output</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-cadsr-schema-id">--schema-id</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-cadsr-n">--schema-name</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-cadsr-n">-n</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-cadsr-o">-o</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-cadsr-arg-INPUT">INPUT</a>
+</li>
+      </ul></li>
+      <li>
     schemauto-import-dosdps command line option
 
       <ul>
@@ -1389,7 +1419,11 @@
 </li>
         <li><a href="cli.html#cmdoption-schemauto-import-json-schema-import-project">--import-project</a>
 </li>
+        <li><a href="cli.html#cmdoption-schemauto-import-json-schema-is-openapi">--is-openapi</a>
+</li>
         <li><a href="cli.html#cmdoption-schemauto-import-json-schema-import-project">--no-import-project</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-json-schema-is-openapi">--no-is-openapi</a>
 </li>
         <li><a href="cli.html#cmdoption-schemauto-import-json-schema-use-attributes">--no-use-attributes</a>
 </li>
@@ -1406,6 +1440,25 @@
         <li><a href="cli.html#cmdoption-schemauto-import-json-schema-o">-o</a>
 </li>
         <li><a href="cli.html#cmdoption-schemauto-import-json-schema-arg-INPUT">INPUT</a>
+</li>
+      </ul></li>
+      <li>
+    schemauto-import-kwalify command line option
+
+      <ul>
+        <li><a href="cli.html#cmdoption-schemauto-import-kwalify-use-attributes">--no-use-attributes</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-kwalify-o">--output</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-kwalify-n">--schema-name</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-kwalify-use-attributes">--use-attributes</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-kwalify-n">-n</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-kwalify-o">-o</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-kwalify-arg-INPUT">INPUT</a>
 </li>
       </ul></li>
       <li>
@@ -1433,23 +1486,25 @@
     schemauto-import-rdfs command line option
 
       <ul>
-        <li><a href="cli.html#cmdoption-schemauto-import-rdfs-0">--identifier</a>
+        <li><a href="cli.html#cmdoption-schemauto-import-rdfs-f">--format</a>
 </li>
-        <li><a href="cli.html#cmdoption-schemauto-import-rdfs-I">--input-type</a>
+        <li><a href="cli.html#cmdoption-schemauto-import-rdfs-I">--identifier</a>
 </li>
         <li><a href="cli.html#cmdoption-schemauto-import-rdfs-metamodel-mappings">--metamodel-mappings</a>
 </li>
         <li><a href="cli.html#cmdoption-schemauto-import-rdfs-model-uri">--model-uri</a>
 </li>
-        <li><a href="cli.html#cmdoption-schemauto-import-rdfs-1">--output</a>, <a href="cli.html#cmdoption-schemauto-import-rdfs-o">[1]</a>
+        <li><a href="cli.html#cmdoption-schemauto-import-rdfs-0">--output</a>, <a href="cli.html#cmdoption-schemauto-import-rdfs-o">[1]</a>
 </li>
         <li><a href="cli.html#cmdoption-schemauto-import-rdfs-n">--schema-name</a>
 </li>
-        <li><a href="cli.html#cmdoption-schemauto-import-rdfs-0">-I</a>, <a href="cli.html#cmdoption-schemauto-import-rdfs-I">[1]</a>
+        <li><a href="cli.html#cmdoption-schemauto-import-rdfs-f">-f</a>
+</li>
+        <li><a href="cli.html#cmdoption-schemauto-import-rdfs-I">-I</a>
 </li>
         <li><a href="cli.html#cmdoption-schemauto-import-rdfs-n">-n</a>
 </li>
-        <li><a href="cli.html#cmdoption-schemauto-import-rdfs-1">-o</a>, <a href="cli.html#cmdoption-schemauto-import-rdfs-o">[1]</a>
+        <li><a href="cli.html#cmdoption-schemauto-import-rdfs-0">-o</a>, <a href="cli.html#cmdoption-schemauto-import-rdfs-o">[1]</a>
 </li>
         <li><a href="cli.html#cmdoption-schemauto-import-rdfs-arg-RDFSFILE">RDFSFILE</a>
 </li>
@@ -1517,69 +1572,71 @@
 
 
 
-	    </div>
-            <footer>
-  
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">Schema Automator</a></h1>
 
-  <hr/>
 
-  <div role="contentinfo">
-    <p>
-        &copy; Copyright 2022, LinkML Developers.
-    </p>
-  </div>
 
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/jucacrispim/sphinx_pdj_theme">theme</a> provided by <a href="http://poraodojuca.net">Porão do Juca</a>.
 
-</footer>
-	</div>
-	</div>
-	  
 
-    <script type="text/javascript">
-        var DOCUMENTATION_OPTIONS = {
-            URL_ROOT:'./',
-            VERSION:'',
-            COLLAPSE_INDEX:false,
-            FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true
-        };
-    </script>
-    <script type="text/javascript" src="_static/documentation_options.js">
 
-    </script>
-    <script type="text/javascript" src="_static/jquery.js">
 
-    </script>
-    <script type="text/javascript" src="_static/underscore.js">
 
-    </script>
-    <script type="text/javascript" src="_static/doctools.js">
+<h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cli.html">Command Line Interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="packages/index.html">Packages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="metamodels/index.html">Source Metamodels</a></li>
+</ul>
 
-    </script>
-    <script type="text/javascript" src="https://unpkg.com/mermaid/dist/mermaid.min.js">
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
 
-    </script>
-    <script type="text/javascript" src="None">
 
-    </script>
 
-  
 
-   <script type="text/javascript"
-           src="_static/js/theme.js"></script>
 
-   <script type="text/javascript"
-           src="_static/js/pdj.js"></script>
 
-  
-  
-  <script type="text/javascript">
-      jQuery(function () {
-          SphinxRtdTheme.StickyNav.enable();
-      });
-  </script>
-   
 
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2022, LinkML Developers.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 7.4.7</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 0.7.16</a>
+      
+    </div>
+
+    
+
+    
   </body>
 </html>

@@ -1,0 +1,87 @@
+
+
+# Slot: foreignKeys 
+
+
+
+URI: [frictionless:foreignKeys](https://w3id.org/linkml/frictionless/foreignKeys)
+Alias: foreignKeys
+
+<!-- no inheritance hierarchy -->
+
+
+
+
+
+## Applicable Classes
+
+| Name | Description | Modifies Slot |
+| --- | --- | --- |
+| [Schema](Schema.md) |  |  no  |
+
+
+
+
+
+
+
+## Properties
+
+* Range: [ForeignKeys](ForeignKeys.md)
+
+* Multivalued: True
+
+
+
+
+
+
+## Examples
+
+| Value |
+| --- |
+| ['$ref:ForeignKeys', '$ref:ForeignKeys'] |
+
+## Identifier and Mapping Information
+
+
+
+
+
+
+
+### Schema Source
+
+
+* from schema: https://w3id.org/linkml/frictionless
+
+
+
+
+## Mappings
+
+| Mapping Type | Mapped Value |
+| ---  | ---  |
+| self | frictionless:foreignKeys |
+| native | frictionless:foreignKeys |
+
+
+
+
+## LinkML Source
+
+<details>
+```yaml
+name: foreignKeys
+examples:
+- value: '[''$ref:ForeignKeys'', ''$ref:ForeignKeys'']'
+from_schema: https://w3id.org/linkml/frictionless
+rank: 1000
+alias: foreignKeys
+domain_of:
+- Schema
+range: ForeignKeys
+multivalued: true
+
+```
+</details>

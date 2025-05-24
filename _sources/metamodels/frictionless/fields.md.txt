@@ -1,0 +1,91 @@
+
+
+# Slot: fields 
+
+
+
+URI: [frictionless:fields](https://w3id.org/linkml/frictionless/fields)
+Alias: fields
+
+<!-- no inheritance hierarchy -->
+
+
+
+
+
+## Applicable Classes
+
+| Name | Description | Modifies Slot |
+| --- | --- | --- |
+| [ForeignKeys](ForeignKeys.md) |  |  yes  |
+| [Reference](Reference.md) |  |  yes  |
+| [Schema](Schema.md) |  |  yes  |
+
+
+
+
+
+
+
+## Properties
+
+* Range: [Field](Field.md)
+
+* Multivalued: True
+
+
+
+
+
+
+## Examples
+
+| Value |
+| --- |
+| id |
+
+## Identifier and Mapping Information
+
+
+
+
+
+
+
+### Schema Source
+
+
+* from schema: https://w3id.org/linkml/frictionless
+
+
+
+
+## Mappings
+
+| Mapping Type | Mapped Value |
+| ---  | ---  |
+| self | frictionless:fields |
+| native | frictionless:fields |
+
+
+
+
+## LinkML Source
+
+<details>
+```yaml
+name: fields
+examples:
+- value: id
+from_schema: https://w3id.org/linkml/frictionless
+rank: 1000
+alias: fields
+domain_of:
+- Reference
+- ForeignKeys
+- Schema
+range: Field
+multivalued: true
+
+```
+</details>

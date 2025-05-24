@@ -1,0 +1,79 @@
+
+
+# Slot: ClassificationSchemes 
+
+
+
+URI: [cadsr:ClassificationSchemes](https://example.org/cadsrClassificationSchemes)
+Alias: ClassificationSchemes
+
+<!-- no inheritance hierarchy -->
+
+
+
+
+
+## Applicable Classes
+
+| Name | Description | Modifies Slot |
+| --- | --- | --- |
+| [DataElement](DataElement.md) | An element representing a specific metadata element |  yes  |
+
+
+
+
+
+
+
+## Properties
+
+* Range: [ClassificationScheme](ClassificationScheme.md)
+
+* Multivalued: True
+
+
+
+
+
+## Identifier and Mapping Information
+
+
+
+
+
+
+
+### Schema Source
+
+
+* from schema: https://example.org/cadsr
+
+
+
+
+## Mappings
+
+| Mapping Type | Mapped Value |
+| ---  | ---  |
+| self | cadsr:ClassificationSchemes |
+| native | cadsr:ClassificationSchemes |
+
+
+
+
+## LinkML Source
+
+<details>
+```yaml
+name: ClassificationSchemes
+from_schema: https://example.org/cadsr
+rank: 1000
+alias: ClassificationSchemes
+domain_of:
+- DataElement
+range: ClassificationScheme
+required: false
+multivalued: true
+
+```
+</details>

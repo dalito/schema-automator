@@ -1,0 +1,80 @@
+
+
+# Slot: valueDomainVersion 
+
+
+_The unique version identifier of the Administered Item._
+
+
+
+
+
+URI: [cadsr:valueDomainVersion](https://example.org/cadsrvalueDomainVersion)
+Alias: valueDomainVersion
+
+<!-- no inheritance hierarchy -->
+
+
+
+
+
+## Applicable Classes
+
+| Name | Description | Modifies Slot |
+| --- | --- | --- |
+| [DataElementQuery](DataElementQuery.md) |  |  yes  |
+
+
+
+
+
+
+
+## Properties
+
+* Range: NONE
+
+
+
+
+
+## Identifier and Mapping Information
+
+
+
+
+
+
+
+### Schema Source
+
+
+* from schema: https://example.org/cadsr
+
+
+
+
+## Mappings
+
+| Mapping Type | Mapped Value |
+| ---  | ---  |
+| self | cadsr:valueDomainVersion |
+| native | cadsr:valueDomainVersion |
+
+
+
+
+## LinkML Source
+
+<details>
+```yaml
+name: valueDomainVersion
+description: The unique version identifier of the Administered Item.
+from_schema: https://example.org/cadsr
+rank: 1000
+alias: valueDomainVersion
+domain_of:
+- DataElementQuery
+
+```
+</details>
